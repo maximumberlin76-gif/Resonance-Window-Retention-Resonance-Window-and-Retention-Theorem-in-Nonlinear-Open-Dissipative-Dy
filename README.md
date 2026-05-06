@@ -263,3 +263,13 @@ The objective is not only to present final equations, but also to preserve:
 - experimental evolution
 
 across multiple computational and theoretical layers.
+
+---
+
+# Status
+
+Active theorem and computational research framework.
+
+The repository contains formalized theorem structures, computational validation layers, and reproducible experimental proof-chains for nonlinear dissipative open dynamic systems.
+
+Historical experiment chain (v1–v34) will be progressively restored into the repository as part of the complete validation and reproducibility archive.
