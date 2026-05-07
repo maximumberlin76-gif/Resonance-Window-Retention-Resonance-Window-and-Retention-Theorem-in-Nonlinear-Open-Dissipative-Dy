@@ -175,6 +175,58 @@ The framework is constructed around two connected theorem layers.
 
 ---
 
+## Operational Synthesis Model
+
+Within the framework, synthesis is not defined as temporary synchronization,
+instantaneous amplification,
+or short-lived coherence spikes.
+
+Synthesis is defined as the transition of a system into a retained operational state capable of remaining stable after external driving is removed.
+
+Formally:
+
+Synthesis is defined as the selection of a state:
+
+x ∈ Ω(t)
+
+such that:
+
+Θ_N ≥ Θ_crit
+
+and
+
+∫(C(t) − P(t))dt > 0
+
+over completed operational periods,
+
+and the resulting state remains inside:
+
+Ω_ret ⊆ Ω(t)
+
+after reduction or removal of external driving.
+
+The retained domain must additionally satisfy:
+
+- forward invariance
+- Lyapunov stability
+- non-zero basin of attraction
+
+The framework therefore distinguishes:
+
+temporary synchronization
+from
+retained structural synthesis.
+
+A resonance window does not grant arbitrary control over matter.
+
+It defines an admissible region of state space in which a system may remain organized only if coherent accumulation, retention, and stability conditions are satisfied.
+
+Operationally, synthesis follows the process:
+
+entry → accumulation → selection → retention → stability
+
+---
+
 ## Resonance Window Theorem
 
 A state:
