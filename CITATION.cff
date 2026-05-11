@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "Resonance Window Theorem and Retention Theorem Framework"
+
+message: "If you use this framework, please cite this repository."
+
+type: software
+
+authors:
+  - family-names: "Marnov"
+    given-names: "Maksym"
+
+repository-code: "https://github.com/maximumberlin76-gif/Resonance-Window-Theorem-and-Retention-Theorem-Framework"
+
+license: Apache-2.0
+
+version: "v2.4.0-philosophical-edition"
+
+abstract: >
+  Framework dedicated to the study of resonance,
+  retention, self-organization, synthesis,
+  and dynamically stable regimes in nonlinear
+  dissipative open dynamic systems.
