@@ -436,27 +436,6 @@ Represents the universal reduced-order dynamics near endogenous critical transit
 
 ---
 
-### τ
-
-Dimensionless rescaled critical time variable used in canonical bifurcation scaling analysis.
-
-Defined through:
-
-- t = v^(−1/3) τ
-
-Represents the universal critical-time coordinate after endogenous dynamic rescaling.
-
----
-
-### τ_ret
-
-Retention stabilization time after operational transition.
-
-Represents the interval required for retained operational stabilization after external forcing reduction or 
-removal.
-
----
-
 - Ω(t)
 
 Dynamic resonance window representing the admissible operational region of state space.
