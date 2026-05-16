@@ -448,7 +448,7 @@ Represents the universal critical-time coordinate after endogenous dynamic resca
 
 ---
 
-τ_ret
+### τ_ret
 
 Retention stabilization time after operational transition.
 
