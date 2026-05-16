@@ -448,11 +448,13 @@ Represents the universal critical-time coordinate after endogenous dynamic resca
 
 ---
 
-### τ_ret
+###τ_ret
 
 Retention stabilization time after operational transition.
 
-Represents the interval required for retained operational stabilization after external forcing reduction or removal.
+Represents the interval required for retained operational stabilization after external forcing reduction or 
+removal.
+
 ---
 
 - Ω(t)
