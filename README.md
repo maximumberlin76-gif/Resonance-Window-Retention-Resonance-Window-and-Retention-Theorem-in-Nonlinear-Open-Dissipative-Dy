@@ -707,6 +707,35 @@ continue to exceed total structural loss over operational time.
 
 ---
 
+## Incomplete Synthesis-Cycle Regime
+
+Within the framework, instability of a nonlinear dissipative open dynamic system may emerge as:
+
+- persistent inability to complete a full endogenous synthesis cycle.
+
+In this regime:
+
+- coherent accumulation becomes insufficient,
+- dissipative inheritance accumulates,
+- endogenous attractor continuity destabilizes,
+- resonance-window traversal remains incomplete,
+- and recursive continuity of endogenous structural synthesis collapses over time.
+
+The system may therefore exhibit:
+
+- transient coherence,
+- temporary synchronization,
+- local structural organization,
+- or metastable operational states
+
+while remaining incapable of sustaining a completed endogenous synthesis cycle.
+
+Within the framework, plasma instability may therefore be interpreted not only as confinement failure,
+
+but as collapse of recursive endogenous synthesis continuity.
+
+---
+
 ## Stability Conditions
 
 ### Forward Invariance
@@ -891,7 +920,6 @@ This condition ensures that coherent structural regeneration exceeds dissipative
 ---
 
 The framework further requires the existence of a retained operational domain:
-
 - Ω_ret ⊆ Ω(t)
 
 such that:
