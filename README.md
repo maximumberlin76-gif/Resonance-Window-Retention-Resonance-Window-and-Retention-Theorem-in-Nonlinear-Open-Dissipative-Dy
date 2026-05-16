@@ -549,6 +549,51 @@ or becomes operationally negligible.
 
 ---
 
+# Notation Continuity — Structural Meaning of P(t)
+
+Within the EDS/EDC framework:
+
+- P(t)
+
+originally denotes:
+
+- external load,
+- imposed structural demand,
+- extraction pressure,
+- or operational burden acting on the system.
+
+In the Resonance Window and Retention operational framework,
+the same operator preserves its original structural meaning,
+but becomes operationally expanded due to externally initiated
+dynamic interaction with resonance-driving fields.
+
+Thus:
+
+- P(t)
+
+continues to represent the total structural cost of maintaining
+system integrity over time, including:
+
+- external load,
+- dissipative pressure,
+- fragmentation tendency,
+- coherence degradation,
+- retention-related structural expenditure,
+- and operational survivability cost under external interaction.
+
+This is not a redefinition of P(t),
+but an operational expansion of the same structural dissipation/load operator
+within externally initiated endogenous dynamics.
+
+The underlying continuity condition remains:
+
+∫(C(t) − P(t))dt > 0
+
+meaning that regenerative coherent contribution must
+continue to exceed total structural loss over operational time.
+
+---
+
 ## Stability Conditions
 
 ### Forward Invariance
