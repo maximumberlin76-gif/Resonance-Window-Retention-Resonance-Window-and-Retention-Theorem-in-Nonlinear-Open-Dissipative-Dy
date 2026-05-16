@@ -342,6 +342,119 @@ These parameters define the operational structure of resonance-driven accumulati
 
 ---
 
+## Additional EDS/EDC Continuity Parameters
+
+### Δ(t)
+
+Net endogenous structural balance function.
+
+Defined as:
+
+- Δ(t) = S(t) − P(t) − D(t)
+
+Represents the instantaneous balance between:
+
+- synthesis,
+- structural load,
+- and dissipative loss.
+
+Interpretation:
+
+- Δ(t) > 0 → structural growth
+- Δ(t) = 0 → quasi-stationary balance
+- Δ(t) < 0 → degradation
+
+---
+
+### S(t)
+
+Endogenous synthesis / regenerative structural contribution function.
+
+Represents:
+
+- structure formation,
+- coherence generation,
+- endogenous regeneration,
+- and constructive organizational dynamics.
+
+---
+
+### D(t)
+
+Intrinsic dissipative loss function.
+
+Represents:
+
+- entropy production,
+- internal dissipation,
+- incoherent energy loss,
+- and irreversible degradation processes internal to the system dynamics.
+
+---
+
+### r(t)
+
+Endogenous dynamic control parameter.
+
+Represents the internally generated drift parameter governing:
+
+- approach to criticality,
+- bifurcation dynamics,
+- and endogenous transition behavior.
+
+---
+
+### μ
+
+Coupling coefficient between coherence dynamics and structural load.
+
+Controls:
+
+- endogenous drift rate,
+- critical transition sensitivity,
+- and coherence-load interaction dynamics.
+
+---
+
+### v
+
+Endogenous drift velocity parameter.
+
+Defined near criticality as:
+
+- v = μP
+
+Represents the effective endogenous rate of approach toward the critical transition regime.
+
+---
+
+### y(τ)
+
+Dimensionless canonical coherence variable after critical rescaling.
+
+Represents the universal reduced-order dynamics near endogenous critical transition.
+
+---
+
+### τ
+
+Dimensionless rescaled critical time variable used in canonical bifurcation scaling analysis.
+
+Defined through:
+
+- t = v^(−1/3) τ
+
+Represents the universal critical-time coordinate after endogenous dynamic rescaling.
+
+---
+
+### τ_ret
+
+Retention stabilization time after operational transition.
+
+Represents the interval required for retained operational stabilization after external forcing reduction or removal.
+---
+
 - Ω(t)
 
 Dynamic resonance window representing the admissible operational region of state space.
