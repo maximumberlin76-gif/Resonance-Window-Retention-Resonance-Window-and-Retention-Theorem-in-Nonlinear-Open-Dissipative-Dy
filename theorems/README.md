@@ -5,16 +5,18 @@ This section contains the formal theorem structures for nonlinear dissipative op
 The theorem layer consists of two connected theorems:
 
 1. Resonance Window Theorem
+
 2. Hybrid Retention Theorem
 
 The objective of this section is to formalize the conditions under which a system may:
 
 - enter an admissible resonance region
-- accumulate positive structural work
-- retain organization after drive reduction
-- remain stable under bounded perturbations
 
-- ---
+- accumulate positive structural work
+
+- retain organization after drive reduction
+
+- remain stable under bounded perturbations
 
 # Resonance Window Theorem
 
@@ -34,7 +36,19 @@ and
 
 over completed periods,
 
-with retention inside:
+where:
+
+C(t) — general endogenous structural coherence and regenerative support of retained organizational persistence;
+
+P(t) — dissipative loss, destabilizing pressure, fragmentation pressure, or structural degradation load.
+
+This condition is a retained operational persistence condition.
+
+It does not redefine C(t) as a simple contribution function.
+
+It means that endogenous structural coherence and regenerative support must exceed total structural loss and destabilizing pressure over completed operational intervals.
+
+The synthesized state must also remain inside:
 
 Ω_ret ⊆ Ω(t)
 
@@ -43,10 +57,10 @@ after reduction or removal of external driving.
 The theorem additionally requires:
 
 - forward invariance
-- Lyapunov stability
-- non-zero basin of attraction
 
-- ---
+- Lyapunov stability
+
+- non-zero basin of attraction
 
 ## Interpretation
 
@@ -63,10 +77,16 @@ A temporary coherent response is insufficient.
 A valid synthesized state must:
 
 - accumulate positive structural work
-- preserve positive balance over time
+
+- preserve positive structural balance over time
+
+- retain endogenous structural coherence over completed periods
+
 - remain stable after external drive reduction
 
-- ------
+Temporary synchronization is not identical to retained synthesis.
+
+A resonance window becomes operationally meaningful only when coherent accumulation and retained-domain persistence are both satisfied.
 
 # Hybrid Retention Theorem
 
@@ -78,14 +98,9 @@ F_total(t) = F_acoustic(t) + F_EM(t)
 
 where:
 
-F_acoustic
-→ initiates entry into the resonance window
-→ accelerates Θ_N accumulation
+F_acoustic → initiates entry into the resonance window → accelerates Θ_N accumulation
 
-F_EM
-→ stabilizes Ω_ret
-→ suppresses phase dispersion
-→ maintains retained organization
+F_EM → stabilizes Ω_ret → suppresses phase dispersion → maintains retained organization
 
 A retained state exists only if:
 
@@ -97,7 +112,17 @@ and
 
 remain satisfied over completed periods.
 
----
+where:
+
+C(t) — general endogenous structural coherence and regenerative support of retained organizational persistence;
+
+P(t) — dissipative loss, destabilizing pressure, fragmentation pressure, or structural degradation load.
+
+The retained state must also satisfy retained-domain stability conditions inside:
+
+Ω_ret ⊆ Ω(t)
+
+after reduction or removal of external driving.
 
 ## Interpretation
 
@@ -115,17 +140,30 @@ Hybrid stabilization does not directly control matter.
 
 It stabilizes the conditions under which a self-organized state may persist over time.
 
----
+The acoustic component supports resonance-window entry and accumulation.
+
+The electromagnetic component supports retained-domain stabilization and post-entry persistence.
+
+Neither temporary phase alignment nor external forcing alone is sufficient.
+
+A retained operational regime must preserve structural continuity after the driving conditions are reduced.
 
 # Repository Structure
 
 This section contains:
 
 - condensed theorem formulations
+
 - full theorem definitions
+
 - retained-domain conditions
+
 - work-accumulation formalism
+
 - Lyapunov stability conditions
+
 - forward-invariance conditions
+
 - basin-of-attraction conditions
+
 - hybrid stabilization formalism
