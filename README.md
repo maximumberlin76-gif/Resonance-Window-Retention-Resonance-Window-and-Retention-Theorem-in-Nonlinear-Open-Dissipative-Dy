@@ -13,26 +13,39 @@ Its operational domain is explicitly limited to:
 Within this class, the framework investigates how systems:
 
 - enter admissible resonance windows,
+
 - accumulate coherent structural work,
+
 - transition through operational selection processes,
+
 - stabilize into retained operational regimes,
+
 - preserve structural organization after reduction of external driving,
+
 - or collapse into fragmentation and dispersion.
 
 The repository combines:
 
 - theorem structures,
+
 - operational synthesis models,
+
 - coherent accumulation invariants,
+
 - retained-domain stability conditions,
+
 - computational validation frameworks,
+
 - and hybrid acoustic/electromagnetic plasma retention experiments.
 
 The framework distinguishes:
 
 - temporary synchronization,
+
 - transient resonance amplification,
+
 - externally forced organization,
+
 - and retained operational synthesis.
 
 A temporary increase in coherence is not treated as synthesis.
@@ -42,8 +55,11 @@ A short-lived resonance response is not yet a stable operational structure.
 A valid synthesized regime must satisfy:
 
 - coherent accumulation,
+
 - positive structural balance,
+
 - retained-domain persistence,
+
 - and post-forcing operational stability.
 
 The repository is intentionally organized as a proof-chain and operational validation architecture rather than a single isolated publication.
@@ -51,22 +67,27 @@ The repository is intentionally organized as a proof-chain and operational valid
 Its objective is not only to present formal structures, but also to preserve:
 
 - logical continuity,
+
 - reproducibility,
+
 - theorem evolution,
+
 - validation transparency,
+
 - and experimental reconstruction pathways
 
 across multiple theoretical and computational layers.
-
----
 
 # Definition of System Class
 
 Within this framework, nonlinear dissipative open dynamic systems are defined as systems which:
 
 - evolve continuously over time,
+
 - exchange energy, matter, information, or structural influence with the surrounding environment,
+
 - continuously experience dissipative loss,
+
 - and exhibit nonlinear response behavior.
 
 Such systems do not maintain stability through static equilibrium alone.
@@ -74,25 +95,37 @@ Such systems do not maintain stability through static equilibrium alone.
 Their operational stability depends on dynamic balance between:
 
 - coherent structural accumulation,
+
 - dissipative processes,
+
 - adaptive regulation,
+
 - retention capability,
+
 - and recovery behavior over time.
 
 Within this class of systems:
 
 - small perturbations may produce large structural transitions,
+
 - strong forcing may fail to generate stable organization,
+
 - temporary synchronization may emerge without retention,
+
 - and externally forced order may collapse after removal of driving conditions.
 
 The framework therefore investigates the conditions under which such systems may:
 
 - self-organize,
+
 - accumulate coherence,
+
 - preserve structural continuity,
+
 - maintain retained operational stability,
+
 - recover after perturbation,
+
 - or collapse into fragmentation and dispersion.
 
 The framework does not assume ideal equilibrium conditions, perfectly isolated environments, or permanently stable configurations.
@@ -100,12 +133,14 @@ The framework does not assume ideal equilibrium conditions, perfectly isolated e
 Instead, operational persistence is treated as a dynamic process emerging from the interaction between:
 
 - accumulation,
-- dissipation,
-- retention,
-- adaptive stabilization,
-- and structural survivability over time.
 
----
+- dissipation,
+
+- retention,
+
+- adaptive stabilization,
+
+- and structural survivability over time.
 
 # System Class
 
@@ -117,8 +152,6 @@ The framework does not assume ideal equilibrium conditions or perfectly isolated
 
 Instead, it operates within systems where operational stability emerges through dynamic balance between coherent structural accumulation and dissipative loss.
 
----
-
 ## Nonlinear
 
 System response is not proportional to external input.
@@ -126,20 +159,24 @@ System response is not proportional to external input.
 Within nonlinear systems:
 
 - small perturbations may produce large structural transitions,
+
 - threshold crossings may trigger regime changes,
+
 - and strong forcing may fail to generate stable organization.
 
 Such systems may contain:
 
 - resonance corridors,
+
 - bifurcation regions,
+
 - chaotic transition zones,
+
 - adaptive regime switching,
+
 - and metastable operational states.
 
 The framework therefore evaluates stability dynamically rather than assuming linear predictability.
-
----
 
 ## Dissipative
 
@@ -161,16 +198,18 @@ where structural regeneration slightly exceeds structural loss, allowing long-te
 
 If dissipation persistently exceeds regenerative structural capability, coherent retention collapses and fragmentation increases.
 
----
-
 ## Open
 
 The system exchanges:
 
 - energy,
+
 - matter,
+
 - information,
+
 - coherence,
+
 - or structural influence
 
 with the surrounding environment.
@@ -182,11 +221,12 @@ Environmental coupling is treated as a fundamental component of operational pers
 External influence may:
 
 - accelerate coherence accumulation,
-- destabilize operational balance,
-- shift resonance conditions,
-- or alter retention capability over time.
 
----
+- destabilize operational balance,
+
+- shift resonance conditions,
+
+- or alter retention capability over time.
 
 ## Dynamic
 
@@ -197,21 +237,28 @@ A transient coherent response is insufficient.
 The framework therefore evaluates:
 
 - coherent accumulation,
+
 - operational persistence,
+
 - retention behavior,
+
 - recovery dynamics,
+
 - perturbation survivability,
+
 - and post-forcing stability.
 
 The plasma models contained in this repository are operational validation frameworks for a broader class of nonlinear dissipative open dynamic systems in which structure formation depends on:
 
 - coherent accumulation,
-- dissipation balance,
-- resonance-assisted organization,
-- adaptive stabilization,
-- and retained operational persistence.
 
----
+- dissipation balance,
+
+- resonance-assisted organization,
+
+- adaptive stabilization,
+
+- and retained operational persistence.
 
 # Resonance as a Process
 
@@ -238,7 +285,9 @@ Instead, it defines an admissible operational region in which structural organiz
 Within the framework, resonance acts as:
 
 - a selective operational mechanism,
+
 - a coherence-filtering process,
+
 - and a dynamic structural regulator
 
 rather than a purely energetic amplification effect.
@@ -246,9 +295,13 @@ rather than a purely energetic amplification effect.
 The framework therefore separates:
 
 - temporary synchronization,
+
 - coherent accumulation,
+
 - externally forced organization,
+
 - retained operational organization,
+
 - and long-term operational persistence.
 
 A system may temporarily exhibit strong resonance indicators while remaining structurally unstable.
@@ -258,20 +311,24 @@ Conversely, a retained operational regime may continue to preserve structural co
 The framework therefore evaluates not only:
 
 - resonance intensity,
+
 - phase alignment,
+
 - or instantaneous coherence,
 
 but also:
 
 - accumulated structural contribution,
+
 - retention capability,
+
 - adaptive stabilization,
+
 - recovery behavior,
+
 - and operational survivability over time.
 
 Only retained states are accepted as valid synthesized operational structures within the framework.
-
----
 
 # Core Principle
 
@@ -292,19 +349,22 @@ For this reason, synchronization alone is not treated as synthesis.
 The framework explicitly separates:
 
 - phase alignment,
+
 - coherent accumulation,
+
 - structural retention,
+
 - and stable operational persistence.
 
 The role of each component is different.
 
 - R(t)
 
-acts as an instantaneous coherence indicator.
+acts as an instantaneous coherence-support / synchronization indicator.
 
-It reflects the current degree of organized structural behavior, but does not by itself guarantee persistence or retained operational continuity.
+It reflects the current degree of organized phase-related behavior and operational synchronization, but does not by itself guarantee persistence, retained structural coherence, or operational continuity.
 
-A system may temporarily demonstrate high coherence while remaining incapable of sustaining structural organization after reduction of external driving.
+A system may temporarily demonstrate high coherence-support indicators while remaining incapable of sustaining structural organization after reduction of external driving.
 
 Accumulated coherent structural work is represented by:
 
@@ -319,7 +379,9 @@ Retention completes the process by determining whether the organized regime surv
 A valid retained operational regime must preserve:
 
 - structural continuity,
+
 - operational stability,
+
 - and organizational persistence
 
 without requiring permanent external forcing.
@@ -332,15 +394,11 @@ A resonance window does not create arbitrary organization.
 
 It defines the operational region in which stable organization becomes dynamically possible under coherent accumulation, retention, and stability constraints.
 
----
-
 # Parameter Dictionary
 
 The framework uses the following operational variables, parameters, and stability conditions.
 
 These parameters define the operational structure of resonance-driven accumulation, retained-domain persistence, and synthesis dynamics in nonlinear dissipative open dynamic systems.
-
----
 
 ## Additional EDS/EDC Continuity Parameters
 
@@ -355,16 +413,18 @@ Defined as:
 Represents the instantaneous balance between:
 
 - synthesis,
+
 - structural load,
+
 - and dissipative loss.
 
 Interpretation:
 
 - Δ(t) > 0 → structural growth
-- Δ(t) = 0 → quasi-stationary balance
-- Δ(t) < 0 → degradation
 
----
+- Δ(t) = 0 → quasi-stationary balance
+
+- Δ(t) < 0 → degradation
 
 ### S(t)
 
@@ -373,11 +433,12 @@ Endogenous synthesis / regenerative structural contribution function.
 Represents:
 
 - structure formation,
-- coherence generation,
-- endogenous regeneration,
-- and constructive organizational dynamics.
 
----
+- coherence generation,
+
+- endogenous regeneration,
+
+- and constructive organizational dynamics.
 
 ### D(t)
 
@@ -386,11 +447,12 @@ Intrinsic dissipative loss function.
 Represents:
 
 - entropy production,
-- internal dissipation,
-- incoherent energy loss,
-- and irreversible degradation processes internal to the system dynamics.
 
----
+- internal dissipation,
+
+- incoherent energy loss,
+
+- and irreversible degradation processes internal to the system dynamics.
 
 ### r(t)
 
@@ -399,10 +461,10 @@ Endogenous dynamic control parameter.
 Represents the internally generated drift parameter governing:
 
 - approach to criticality,
-- bifurcation dynamics,
-- and endogenous transition behavior.
 
----
+- bifurcation dynamics,
+
+- and endogenous transition behavior.
 
 ### μ
 
@@ -411,10 +473,10 @@ Coupling coefficient between coherence dynamics and structural load.
 Controls:
 
 - endogenous drift rate,
-- critical transition sensitivity,
-- and coherence-load interaction dynamics.
 
----
+- critical transition sensitivity,
+
+- and coherence-load interaction dynamics.
 
 ### v
 
@@ -426,23 +488,17 @@ Defined near criticality as:
 
 Represents the effective endogenous rate of approach toward the critical transition regime.
 
----
-
 ### y(τ)
 
 Dimensionless canonical coherence variable after critical rescaling.
 
 Represents the universal reduced-order dynamics near endogenous critical transition.
 
----
-
 - Ω(t)
 
 Dynamic resonance window representing the admissible operational region of state space.
 
 Within this region, coherent structural organization becomes dynamically possible under admissible accumulation and retention conditions.
-
----
 
 - Ω_ret
 
@@ -456,25 +512,19 @@ after reduction or removal of external driving.
 
 Ω_ret represents the retained-domain region in which structural continuity and operational persistence remain stable over time.
 
----
-
 - x(t)
 
 System state trajectory over time.
 
 Represents the evolving operational configuration of the system within admissible state space.
 
----
-
 - R(t)
 
-Instantaneous coherence indicator.
+Instantaneous synchronization / coherence-support indicator.
 
-Represents the current degree of organized structural behavior and phase-related operational coherence.
+Represents the current degree of organized phase-related behavior and operational synchronization.
 
-R(t) reflects instantaneous organizational state but does not by itself guarantee structural persistence.
-
----
+R(t) may indicate coherence-support dynamics, but it does not by itself prove retained structural coherence, retained operational persistence, or real dynamic stability.
 
 - R_floor
 
@@ -482,15 +532,11 @@ Minimal coherence threshold used to suppress noise-level coherence fluctuations.
 
 Only coherence contributions above this threshold participate in coherent accumulation dynamics.
 
----
-
 - Θ_N
 
 Accumulated coherent structural work over N completed operational periods.
 
 Θ_N represents the cumulative positive structural contribution accumulated through operational resonance processes over time.
-
----
 
 - Θ_crit
 
@@ -502,33 +548,33 @@ If:
 
 the system cannot achieve stable retained synthesis.
 
----
-
 - W_period(k)
 
 Coherent structural contribution accumulated during operational period k.
 
 Defined as:
 
-- W_period(k) =
-  ∫[t₀+kT → t₀+(k+1)T]
-  max(0, R(t) − R_floor) · F_ext(t) dt
+- W_period(k) = ∫[t₀+kT → t₀+(k+1)T] max(0, R(t) − R_floor) · F_ext(t) dt
 
 This quantity represents the positive structural contribution accumulated during one completed operational interval.
 
----
-
 - C(t)
 
-Coherent structural contribution function.
+General endogenous structural coherence parameter.
 
-Represents regenerative structural processes supporting:
+Represents the degree of internal coherence of structural self-organization processes supporting:
 
 - organization,
-- operational persistence,
-- and retention capability.
 
----
+- operational persistence,
+
+- retention capability,
+
+- retained-domain stability,
+
+- and structural integrity over operational time.
+
+Regenerative structural processes may support C(t), but they are not identical to C(t).
 
 - P(t)
 
@@ -537,11 +583,12 @@ Dissipative or destructive contribution function.
 Represents:
 
 - structural loss,
-- fragmentation,
-- destabilization pressure,
-- and coherence degradation.
 
----
+- fragmentation,
+
+- destabilization pressure,
+
+- and coherence degradation.
 
 - F_ext(t)
 
@@ -550,11 +597,12 @@ External driving function.
 Represents external forcing responsible for:
 
 - resonance excitation,
-- coherence injection,
-- operational stimulation,
-- or structural activation.
 
----
+- coherence injection,
+
+- operational stimulation,
+
+- or structural activation.
 
 - F_total(t)
 
@@ -562,12 +610,9 @@ Combined hybrid driving field.
 
 Defined as:
 
-- F_total(t) =
-  F_acoustic(t) + F_EM(t)
+- F_total(t) = F_acoustic(t) + F_EM(t)
 
 Represents the combined operational influence of hybrid resonance-driving mechanisms.
-
----
 
 - F_acoustic(t)
 
@@ -576,11 +621,12 @@ Acoustic resonance-driving component.
 Used for:
 
 - resonance-window entry,
-- phase-alignment acceleration,
-- coherence clustering,
-- and accelerated Θ_N accumulation.
 
----
+- phase-alignment acceleration,
+
+- coherence clustering,
+
+- and accelerated Θ_N accumulation.
 
 - F_EM(t)
 
@@ -589,11 +635,12 @@ Electromagnetic retention component.
 Used for:
 
 - retained-domain stabilization,
-- reduction of phase dispersion,
-- operational persistence,
-- and post-acoustic retention support.
 
----
+- reduction of phase dispersion,
+
+- operational persistence,
+
+- and post-acoustic retention support.
 
 - t₀
 
@@ -601,35 +648,25 @@ Initial operational reference time.
 
 Defines the starting point of operational evaluation intervals.
 
----
-
 - T
 
 Operational period length.
 
 Defines the duration of one completed accumulation interval.
 
----
-
 - N
 
 Number of coherent accumulation periods participating in Θ_N formation.
 
----
-
 - K
 
 Number of positive-balance operational periods used for persistence evaluation.
-
----
 
 - τ
 
 Retention stabilization time after operational transition.
 
 Represents the interval required for retained operational stabilization.
-
----
 
 - τ_d
 
@@ -641,8 +678,6 @@ Defines the moment after which:
 
 or becomes operationally negligible.
 
----
-
 # Notation Continuity — Structural Meaning of P(t)
 
 Within the EDS/EDC framework:
@@ -652,41 +687,42 @@ Within the EDS/EDC framework:
 originally denotes:
 
 - external load,
+
 - imposed structural demand,
+
 - extraction pressure,
+
 - or operational burden acting on the system.
 
-In the Resonance Window and Retention operational framework,
-the same operator preserves its original structural meaning,
-but becomes operationally expanded due to externally initiated
-dynamic interaction with resonance-driving fields.
+In the Resonance Window and Retention operational framework, the same operator preserves its original structural meaning, but becomes operationally expanded due to externally initiated dynamic interaction with resonance-driving fields.
 
 Thus:
 
 - P(t)
 
-continues to represent the total structural cost of maintaining
-system integrity over time, including:
+continues to represent the total structural cost of maintaining system integrity over time, including:
 
 - external load,
+
 - dissipative pressure,
+
 - fragmentation tendency,
+
 - coherence degradation,
+
 - retention-related structural expenditure,
+
 - and operational survivability cost under external interaction.
 
-This is not a redefinition of P(t),
-but an operational expansion of the same structural dissipation/load operator
-within externally initiated endogenous dynamics.
+This is not a redefinition of P(t), but an operational expansion of the same structural dissipation/load operator within externally initiated endogenous dynamics.
 
-The underlying continuity condition remains:
+The retained operational persistence condition remains:
 
 ∫(C(t) − P(t))dt > 0
 
-meaning that regenerative coherent contribution must
-continue to exceed total structural loss over operational time.
+over completed operational intervals,
 
----
+meaning that endogenous structural coherence and regenerative support must exceed total structural loss and destabilizing pressure over operational time.
 
 ## Incomplete Synthesis-Cycle Regime
 
@@ -697,16 +733,23 @@ Within the framework, instability of a nonlinear dissipative open dynamic system
 In this regime:
 
 - coherent accumulation becomes insufficient,
+
 - dissipative inheritance accumulates,
+
 - endogenous attractor continuity destabilizes,
+
 - resonance-window traversal remains incomplete,
+
 - and recursive continuity of endogenous structural synthesis collapses over time.
 
 The system may therefore exhibit:
 
 - transient coherence,
+
 - temporary synchronization,
+
 - local structural organization,
+
 - or metastable operational states
 
 while remaining incapable of sustaining a completed endogenous synthesis cycle.
@@ -714,8 +757,6 @@ while remaining incapable of sustaining a completed endogenous synthesis cycle.
 Within the framework, plasma instability may therefore be interpreted not only as confinement failure,
 
 but as collapse of recursive endogenous synthesis continuity.
-
----
 
 ## Stability Conditions
 
@@ -725,23 +766,17 @@ but as collapse of recursive endogenous synthesis continuity.
 
 A retained operational trajectory cannot spontaneously escape the retained operational domain under nominal system evolution.
 
----
-
 ### Lyapunov Stability
 
 - x(t) must remain Lyapunov-stable within Ω_ret under bounded perturbations.
 
 Small disturbances must not destroy retained operational organization.
 
----
-
 ### Non-Zero Basin of Attraction
 
 The retained operational regime must possess a physically reachable non-zero basin of attraction.
 
 A synthesized operational state must therefore be dynamically attainable rather than purely theoretical.
-
----
 
 # Two Core Invariants
 
@@ -750,7 +785,9 @@ The framework is constructed around two fundamental operational invariants.
 These invariants separate:
 
 - temporary synchronization,
+
 - transient resonance response,
+
 - and retained operational synthesis.
 
 A short-lived coherent response is insufficient.
@@ -758,11 +795,10 @@ A short-lived coherent response is insufficient.
 A valid synthesized operational regime must simultaneously satisfy:
 
 - coherent accumulation conditions,
+
 - and positive structural persistence conditions.
 
 The framework therefore evaluates not only instantaneous resonance intensity, but also accumulated operational survivability over completed periods.
-
----
 
 ## Invariant I — Accumulated Positive Structural Work
 
@@ -774,9 +810,7 @@ Accumulated coherent structural work is defined as:
 
 where:
 
-- W_period(k) =
-  ∫[t₀+kT → t₀+(k+1)T]
-  max(0, R(t) − R_floor) · F_ext(t) dt
+- W_period(k) = ∫[t₀+kT → t₀+(k+1)T] max(0, R(t) − R_floor) · F_ext(t) dt
 
 represents the coherent structural contribution accumulated during one completed operational period.
 
@@ -806,16 +840,13 @@ This invariant prevents transient coherence spikes from being incorrectly interp
 
 A temporary increase in phase alignment is insufficient unless accumulated structural contribution exceeds the critical operational threshold.
 
----
-
 ## Invariant II — Positive Structural Balance Over Completed Periods
 
 The second invariant defines the persistence condition for retained operational stability.
 
 For completed operational periods:
 
-- ∫[t₀+kT → t₀+(k+1)T]
-  (C(t) − P(t)) dt > 0
+- ∫[t₀+kT → t₀+(k+1)T] (C(t) − P(t)) dt > 0
 
 must hold for:
 
@@ -825,7 +856,7 @@ where:
 
 - C(t)
 
-represents coherent structural contribution and regenerative organizational processes,
+represents general endogenous structural coherence and regenerative support of organizational persistence,
 
 and:
 
@@ -833,14 +864,16 @@ and:
 
 represents dissipative, destructive, or fragmentation-related contribution.
 
-This condition ensures that structural regeneration exceeds structural loss over completed operational intervals.
+This condition ensures that endogenous structural coherence and regenerative support exceed dissipative structural loss over completed operational intervals.
 
 The framework therefore evaluates persistence across completed dynamic cycles rather than isolated instantaneous states.
 
 The purpose of this invariant is to prevent:
 
 - short-lived energetic spikes,
+
 - temporary synchronization events,
+
 - or externally forced excitation states
 
 from being incorrectly classified as stable operational synthesis.
@@ -851,15 +884,16 @@ Only operational regimes satisfying positive structural balance are accepted as 
 
 If dissipative contribution persistently exceeds regenerative structural capability, retained organization collapses and fragmentation increases over time.
 
----
-
 # Resonance Window Theorem
 
 The Resonance Window Theorem defines the conditions under which a nonlinear dissipative open dynamic system may:
 
 - enter an admissible resonance region,
+
 - accumulate coherent structural work,
+
 - retain operational organization,
+
 - and stabilize into a synthesized operational regime.
 
 Within the framework, synthesis is not defined as temporary synchronization or instantaneous amplification.
@@ -867,11 +901,12 @@ Within the framework, synthesis is not defined as temporary synchronization or i
 A synthesized operational state must simultaneously satisfy:
 
 - coherent accumulation conditions,
-- positive structural persistence,
-- retained-domain stability,
-- and post-forcing operational survivability.
 
----
+- positive structural persistence,
+
+- retained-domain stability,
+
+- and post-forcing operational survivability.
 
 A state:
 
@@ -883,24 +918,20 @@ is considered operationally synthesized only if:
 
 where:
 
-- W_period(k) =
-  ∫[t₀+kT → t₀+(k+1)T]
-  max(0, R(t) − R_floor) · F_ext(t) dt
+- W_period(k) = ∫[t₀+kT → t₀+(k+1)T] max(0, R(t) − R_floor) · F_ext(t) dt
 
 represents coherent structural contribution accumulated during one completed operational interval.
 
 Additionally, the following persistence condition must hold:
 
-- ∫[t₀+kT → t₀+(k+1)T]
-  (C(t) − P(t)) dt > 0
+- ∫[t₀+kT → t₀+(k+1)T] (C(t) − P(t)) dt > 0
 
 over completed operational periods.
 
-This condition ensures that coherent structural regeneration exceeds dissipative structural loss over time.
-
----
+This condition ensures that endogenous structural coherence and regenerative support exceed dissipative structural loss over time.
 
 The framework further requires the existence of a retained operational domain:
+
 - Ω_ret ⊆ Ω(t)
 
 such that:
@@ -909,14 +940,11 @@ such that:
 
 for which:
 
-- ∀ t ≥ t₀ + τ:
-  x(t) ∈ Ω_ret
+- ∀ t ≥ t₀ + τ: x(t) ∈ Ω_ret
 
 including the operational regime after reduction or removal of external driving.
 
 The retained operational domain represents the region in which structural continuity and operational persistence remain dynamically stable over time.
-
----
 
 The theorem additionally requires the following retained-domain conditions.
 
@@ -926,15 +954,11 @@ The theorem additionally requires the following retained-domain conditions.
 
 A retained operational trajectory cannot spontaneously escape the retained operational domain without destabilizing perturbation.
 
----
-
 ## Lyapunov Stability
 
 - x(t) must remain Lyapunov-stable within Ω_ret under bounded perturbations.
 
 Small disturbances must not destroy retained operational organization.
-
----
 
 ## Non-Zero Basin of Attraction
 
@@ -942,20 +966,19 @@ The retained operational regime must possess a physically reachable non-zero bas
 
 The synthesized operational state must therefore be dynamically attainable rather than purely theoretical.
 
----
-
 The theorem therefore separates:
 
 - temporary resonance response,
+
 - transient synchronization,
+
 - externally forced organization,
+
 - and physically retained operational synthesis.
 
 A resonance window is not interpreted as unrestricted control over matter.
 
 It defines the admissible operational region in which stable organization becomes dynamically possible under coherent accumulation, retained persistence, and operational stability constraints.
-
----
 
 # Retention Theorem
 
@@ -964,15 +987,16 @@ The Retention Theorem defines the conditions under which a synthesized operation
 The theorem separates:
 
 - resonance-window entry,
+
 - temporary synchronization,
+
 - externally forced organization,
+
 - and retained operational persistence.
 
 A transient coherent response is insufficient.
 
 A valid retained operational regime must preserve structural organization after external forcing decreases or disappears.
-
----
 
 Let:
 
@@ -986,14 +1010,11 @@ The framework requires the existence of:
 
 such that:
 
-- ∀ t ≥ t₀ + τ_d:
-  F_ext(t) = 0
+- ∀ t ≥ t₀ + τ_d: F_ext(t) = 0
 
 or becomes operationally negligible.
 
 This condition defines the operational transition from externally supported organization toward retained structural persistence.
-
----
 
 A synthesized operational state is considered retained only if:
 
@@ -1001,8 +1022,7 @@ A synthesized operational state is considered retained only if:
 
 such that:
 
-- ∀ t ≥ t₀ + τ:
-  x(t) ∈ Ω_ret ⊆ Ω(t)
+- ∀ t ≥ t₀ + τ: x(t) ∈ Ω_ret ⊆ Ω(t)
 
 after reduction or removal of external driving.
 
@@ -1012,8 +1032,6 @@ The retained operational domain:
 
 represents the dynamically stable region in which structural continuity and operational organization persist without continuous external forcing.
 
----
-
 The retained operational domain must satisfy the following stability conditions.
 
 ## Forward Invariance
@@ -1021,8 +1039,6 @@ The retained operational domain must satisfy the following stability conditions.
 - Ω_ret must remain forward-invariant under nominal system evolution.
 
 Trajectories belonging to the retained operational regime cannot spontaneously escape the retained operational domain without destabilizing perturbation.
-
----
 
 ## Lyapunov Stability
 
@@ -1032,22 +1048,17 @@ Small disturbances must not destroy retained operational organization.
 
 The retained operational regime must preserve structural continuity under admissible perturbation conditions.
 
----
-
 ## Positive Structural Balance
 
 For completed operational periods:
 
-- ∫[t₀+kT → t₀+(k+1)T]
-  (C(t) − P(t)) dt > 0
+- ∫[t₀+kT → t₀+(k+1)T] (C(t) − P(t)) dt > 0
 
 must continue to hold during the retained operational phase.
 
-This condition ensures that regenerative structural contribution continues to exceed dissipative structural loss after external driving decreases.
+This condition ensures that endogenous structural coherence and regenerative support continue to exceed dissipative structural loss after external driving decreases.
 
 If dissipative contribution persistently exceeds regenerative structural capability, retained operational organization collapses and fragmentation increases over time.
-
----
 
 ## Non-Zero Basin of Attraction
 
@@ -1057,8 +1068,6 @@ Retention cannot represent an isolated mathematical singularity or an unreachabl
 
 The retained operational regime must remain dynamically accessible through admissible operational trajectories.
 
----
-
 The theorem therefore defines retention as a physically persistent operational condition rather than a temporary resonance effect.
 
 A valid synthesized operational regime is not identified by short-lived excitation alone.
@@ -1066,12 +1075,12 @@ A valid synthesized operational regime is not identified by short-lived excitati
 It is identified by the ability of the system to preserve:
 
 - structural continuity,
+
 - operational organization,
+
 - and dynamic stability
 
 after external driving has been reduced or removed.
-
----
 
 # Hybrid Acoustic / Electromagnetic Plasma Retention Model
 
@@ -1082,19 +1091,18 @@ The hybrid plasma retention model represents a practical operational architectur
 Within the framework, the hybrid regime separates:
 
 - resonance-window entry,
+
 - coherent accumulation,
+
 - and retained operational stabilization
 
 into distinct but connected operational phases.
-
----
 
 ## Hybrid Operational Structure
 
 The total driving field is represented as:
 
-- F_total(t) =
-  F_acoustic(t) + F_EM(t)
+- F_total(t) = F_acoustic(t) + F_EM(t)
 
 where:
 
@@ -1110,8 +1118,6 @@ represents the electromagnetic retention component.
 
 The hybrid architecture separates resonance initiation from long-term retained stabilization.
 
----
-
 ## Acoustic Resonance Entry Phase
 
 Within the framework:
@@ -1121,9 +1127,13 @@ Within the framework:
 is primarily responsible for:
 
 - resonance-window entry,
+
 - phase-alignment acceleration,
+
 - coherence clustering,
+
 - destabilization of fragmented states,
+
 - and accelerated Θ_N accumulation.
 
 The acoustic operational phase assists the system in entering admissible resonance conditions in which coherent structural organization becomes dynamically possible.
@@ -1131,8 +1141,6 @@ The acoustic operational phase assists the system in entering admissible resonan
 Within this phase, temporary synchronization alone is not treated as retained synthesis.
 
 The acoustic regime functions primarily as an operational catalyst for coherent accumulation and structural alignment.
-
----
 
 ## Electromagnetic Retention Phase
 
@@ -1143,9 +1151,13 @@ Within the framework:
 is responsible for:
 
 - retained-domain stabilization,
+
 - reduction of phase dispersion,
+
 - operational persistence,
+
 - coherence preservation,
+
 - and post-acoustic structural retention.
 
 The electromagnetic operational phase supports stabilization of:
@@ -1156,15 +1168,16 @@ after coherent accumulation conditions have been achieved.
 
 This phase is intended to reduce fragmentation pressure and maintain retained organizational continuity after acoustic driving decreases.
 
----
-
 ## Hybrid Retention Logic
 
 The hybrid operational model investigates whether a system may:
 
 - enter a resonance window through acoustic coherence acceleration,
+
 - accumulate sufficient coherent structural contribution,
+
 - transition into a retained operational regime,
+
 - and preserve structural continuity after reduction of external driving.
 
 The operational objective is not maximal forcing intensity.
@@ -1174,23 +1187,29 @@ Instead, the framework investigates whether retained organizational persistence 
 The hybrid regime therefore investigates operational stabilization through:
 
 - resonance coordination,
+
 - coherent accumulation,
+
 - adaptive retention,
+
 - and structural persistence
 
 rather than purely force-based confinement approaches.
-
----
 
 ## Retention-Oriented Plasma Stability
 
 Within the framework, plasma stabilization is evaluated not only by instantaneous confinement behavior, but also by:
 
 - retention duration,
+
 - post-forcing survivability,
+
 - coherence persistence,
+
 - dissipative balance,
+
 - adaptive recovery capability,
+
 - and retained operational continuity over time.
 
 The central operational condition is:
@@ -1206,20 +1225,23 @@ continues to hold.
 This separates:
 
 - transient excitation,
+
 - externally forced organization,
+
 - and retained operational synthesis.
 
 The hybrid plasma model therefore functions as an experimental validation architecture for broader resonance-retention dynamics in nonlinear dissipative open dynamic systems.
-
----
 
 # Operational Synthesis Model
 
 Within the framework, synthesis is not defined as:
 
 - temporary synchronization,
+
 - instantaneous amplification,
+
 - short-lived coherence spikes,
+
 - or externally forced transient organization.
 
 Synthesis is defined as the transition of a nonlinear dissipative open dynamic system into a retained operational regime capable of preserving structural continuity after reduction or removal of external driving.
@@ -1227,10 +1249,10 @@ Synthesis is defined as the transition of a nonlinear dissipative open dynamic s
 The framework therefore distinguishes between:
 
 - transient excitation,
-- externally maintained organization,
-- and retained operational synthesis.
 
----
+- externally maintained organization,
+
+- and retained operational synthesis.
 
 ## Operational Definition of Synthesis
 
@@ -1248,9 +1270,7 @@ for which:
 
 where:
 
-- W_period(k) =
-  ∫[t₀+kT → t₀+(k+1)T]
-  max(0, R(t) − R_floor) · F_ext(t) dt
+- W_period(k) = ∫[t₀+kT → t₀+(k+1)T] max(0, R(t) − R_floor) · F_ext(t) dt
 
 represents the accumulated coherent structural contribution over one completed operational interval.
 
@@ -1259,8 +1279,6 @@ Within the framework:
 - Θ_N
 
 represents cumulative positive structural accumulation generated through resonance-assisted organizational processes over time.
-
----
 
 ## Positive Structural Persistence
 
@@ -1274,14 +1292,13 @@ such that for:
 
 the following persistence condition holds:
 
-- ∫[t₀+kT → t₀+(k+1)T]
-  (C(t) − P(t)) dt > 0
+- ∫[t₀+kT → t₀+(k+1)T] (C(t) − P(t)) dt > 0
 
 where:
 
 - C(t)
 
-represents regenerative structural contribution,
+represents general endogenous structural coherence and regenerative support of organizational persistence,
 
 and:
 
@@ -1289,11 +1306,9 @@ and:
 
 represents dissipative or fragmentation-related contribution.
 
-This condition ensures that coherent structural regeneration exceeds dissipative structural loss across completed operational intervals.
+This condition ensures that endogenous structural coherence and regenerative support exceed dissipative structural loss across completed operational intervals.
 
 The framework therefore evaluates operational persistence over dynamic cycles rather than isolated instantaneous states.
-
----
 
 ## Retained-Domain Requirement
 
@@ -1303,8 +1318,7 @@ The framework further requires:
 
 such that:
 
-- ∀ t ≥ t₀ + τ:
-  x(t) ∈ Ω_ret ⊆ Ω(t)
+- ∀ t ≥ t₀ + τ: x(t) ∈ Ω_ret ⊆ Ω(t)
 
 where:
 
@@ -1314,8 +1328,6 @@ represents the retained operational domain.
 
 A valid synthesized operational regime must therefore preserve structural continuity inside the retained domain over time.
 
----
-
 ## Post-Forcing Persistence
 
 The synthesis model additionally assumes the existence of:
@@ -1324,16 +1336,13 @@ The synthesis model additionally assumes the existence of:
 
 such that:
 
-- ∀ t ≥ t₀ + τ_d:
-  F_ext(t) = 0
+- ∀ t ≥ t₀ + τ_d: F_ext(t) = 0
 
 or becomes operationally negligible.
 
 A valid synthesized operational regime must therefore remain structurally retained after reduction or removal of external driving.
 
 If retained organization collapses immediately after removal of forcing, the operational regime is not treated as valid synthesis within the framework.
-
----
 
 ## Retained Stability Conditions
 
@@ -1343,21 +1352,15 @@ The retained operational domain must additionally satisfy:
 
 - Ω_ret must remain forward-invariant under nominal system evolution.
 
----
-
 ### Lyapunov Stability
 
 - x(t) must remain Lyapunov-stable within Ω_ret under bounded perturbations.
-
----
 
 ### Non-Zero Basin of Attraction
 
 - Ω_ret must possess a physically reachable non-zero basin of attraction.
 
 The retained operational regime must therefore remain dynamically attainable rather than representing an isolated mathematical abstraction.
-
----
 
 ## Operational Interpretation
 
@@ -1366,8 +1369,11 @@ Within the framework, operational synthesis is completed only when coherent accu
 The framework therefore distinguishes:
 
 - temporary synchronization,
+
 - transient resonance amplification,
+
 - externally forced coherence,
+
 - and retained operational synthesis.
 
 A resonance window does not itself guarantee synthesis.
@@ -1375,11 +1381,12 @@ A resonance window does not itself guarantee synthesis.
 It defines the admissible operational region in which retained organizational stability becomes dynamically possible under conditions of:
 
 - coherent accumulation,
-- positive structural balance,
-- retained-domain persistence,
-- and operational survivability over time.
 
----
+- positive structural balance,
+
+- retained-domain persistence,
+
+- and operational survivability over time.
 
 # Experimental Validation Framework
 
@@ -1390,17 +1397,22 @@ The validation framework is not limited to static equilibrium analysis or instan
 Instead, the repository evaluates:
 
 - resonance-window entry,
+
 - coherent accumulation dynamics,
+
 - transient destabilization,
+
 - chaotic transition behavior,
+
 - retained-domain formation,
+
 - adaptive stabilization,
+
 - recovery capability,
+
 - and post-forcing operational persistence.
 
 The objective of the validation framework is to determine whether operational organization may remain structurally stable after reduction of external driving.
-
----
 
 ## Validation Philosophy
 
@@ -1411,14 +1423,16 @@ Transient amplification, temporary synchronization, or externally forced coheren
 Operational validation requires investigation of:
 
 - retained organizational persistence,
+
 - structural continuity,
+
 - dissipative balance,
+
 - adaptive survivability,
+
 - and long-term operational stability.
 
 The framework therefore evaluates not only excitation intensity, but also the ability of a system to preserve retained organizational coherence over time.
-
----
 
 ## Plasma Validation Layers
 
@@ -1427,15 +1441,18 @@ The repository contains plasma-oriented validation environments designed to inve
 These environments include:
 
 - hybrid acoustic/electromagnetic operational regimes,
+
 - multi-gas plasma interaction tests,
+
 - perturbation-response analysis,
+
 - retention survivability experiments,
+
 - coherence reconstruction pathways,
+
 - and nonlinear stabilization behavior.
 
 The plasma models contained in the repository function as operational validation architectures for a broader class of nonlinear dissipative open dynamic systems rather than isolated plasma-only models.
-
----
 
 ## Chaotic Transition Analysis
 
@@ -1444,10 +1461,15 @@ Additional repository layers investigate system behavior near instability bounda
 These layers evaluate:
 
 - chaotic transition corridors,
+
 - coherence fragmentation,
+
 - nonlinear destabilization,
+
 - metastable operational states,
+
 - adaptive relock behavior,
+
 - and resonance re-entry conditions.
 
 The framework investigates whether coherent operational organization may be reconstructed after partial structural degradation.
@@ -1455,34 +1477,41 @@ The framework investigates whether coherent operational organization may be reco
 This allows evaluation not only of stable retained regimes, but also of:
 
 - recovery dynamics,
-- adaptive stabilization,
-- and retained-domain reconstruction after perturbation.
 
----
+- adaptive stabilization,
+
+- and retained-domain reconstruction after perturbation.
 
 ## Recovery and Adaptive Stabilization
 
 The validation framework additionally investigates:
 
 - recovery survivability,
+
 - post-instability structural persistence,
+
 - operational resilience,
+
 - adaptive coherence reconstruction,
+
 - and retained-domain restoration pathways.
 
 The framework therefore evaluates whether operational systems may preserve organizational continuity under destabilizing conditions rather than only under idealized equilibrium states.
-
----
 
 ## Retention-Oriented Validation Criteria
 
 Within the framework, stabilization is evaluated not by instantaneous excitation alone, but by:
 
 - retention duration,
+
 - structural persistence,
+
 - dissipative balance,
+
 - perturbation survivability,
+
 - recovery capability,
+
 - and operational continuity after forcing reduction.
 
 The central validation condition is:
@@ -1498,26 +1527,30 @@ continues to hold over operational time intervals.
 This separates:
 
 - transient excitation,
-- externally maintained organization,
-- and retained operational synthesis.
 
----
+- externally maintained organization,
+
+- and retained operational synthesis.
 
 ## Experimental Objectives
 
 The repository experimentally investigates:
 
 - resonance-assisted self-organization,
+
 - coherent accumulation,
+
 - operational retention efficiency,
+
 - nonlinear stabilization,
+
 - adaptive recovery behavior,
+
 - perturbation-response dynamics,
+
 - and post-instability survivability.
 
 The validation framework therefore functions as a long-term operational research architecture for investigating retained synthesis and structural persistence in nonlinear dissipative open dynamic systems.
-
----
 
 # Repository Structure
 
@@ -1526,56 +1559,68 @@ The repository is intentionally organized as a structured proof-chain and operat
 The objective is not only to present formal theorem structures, but also to preserve:
 
 - logical continuity,
+
 - operational causality,
+
 - reproducibility,
+
 - theorem evolution,
+
 - validation transparency,
+
 - experimental reconstruction pathways,
+
 - and long-term research traceability.
 
 The repository therefore functions simultaneously as:
 
 - a theorem archive,
+
 - an operational synthesis framework,
+
 - a computational validation structure,
+
 - and an experimental reconstruction environment
 
 for nonlinear dissipative open dynamic systems.
-
----
 
 ## Theorem Layer
 
 The theorem layer contains the formal operational structures defining:
 
 - resonance-window conditions,
+
 - retained-domain persistence,
+
 - coherent accumulation requirements,
+
 - operational synthesis conditions,
+
 - forward invariance,
+
 - Lyapunov stability,
+
 - and admissible retained operational regions.
 
 Repository section:
 
 - /theorems/
 
----
-
 ## Invariant Layer
 
 The invariant layer contains the fundamental operational invariants governing:
 
 - coherent structural accumulation,
+
 - positive structural balance,
+
 - dissipative survivability,
+
 - and retained operational viability.
 
 Repository section:
 
 - /invariants/
-
----
 
 ## Resonance Process Layer
 
@@ -1584,79 +1629,94 @@ The resonance-process layer defines resonance as a dynamic operational process r
 This layer contains:
 
 - resonance-window entry dynamics,
+
 - accumulation behavior,
+
 - operational selection logic,
+
 - retention-transition pathways,
+
 - coherence evolution,
+
 - and persistence modeling.
 
 Repository section:
 
 - /resonance_process/
 
----
-
 ## Experimental Validation Layer
 
 The experimental layer contains computational and operational validation frameworks including:
 
 - plasma operational simulations,
+
 - hybrid acoustic/electromagnetic retention regimes,
+
 - perturbation-response analysis,
+
 - nonlinear stabilization testing,
+
 - recovery survivability environments,
+
 - and adaptive reconstruction models.
 
 Repository sections may include:
 
 - /experiments_index/
-- /experimental_parameters/
 
----
+- /experimental_parameters/
 
 ## Adaptive Coherence Layer
 
 This layer investigates:
 
 - coherence reconstruction,
+
 - adaptive stabilization,
+
 - retained-domain persistence,
+
 - operational resilience,
+
 - and recovery after destabilization.
 
 The objective of this layer is to investigate whether operational organization may recover after fragmentation pressure or partial structural degradation.
-
----
 
 ## Chaotic Transition Layer
 
 The chaotic-transition layer contains analytical and computational structures related to:
 
 - chaotic transition corridors,
+
 - fragmentation regimes,
+
 - metastable operational states,
+
 - resonance-window instability,
+
 - nonlinear bifurcation behavior,
+
 - and transient coherence degradation.
 
 This layer investigates operational behavior near instability boundaries and dissipative collapse conditions.
-
----
 
 ## Recovery Dynamics Layer
 
 The recovery layer investigates:
 
 - relock behavior,
+
 - resonance re-entry,
+
 - adaptive recovery pathways,
+
 - post-instability stabilization,
+
 - retained-domain reconstruction,
+
 - and operational survivability after perturbation.
 
 The framework therefore evaluates not only stable organization, but also the possibility of restoring operational continuity after destabilization.
-
----
 
 ## Historical Reconstruction Structure
 
@@ -1669,34 +1729,45 @@ Current repository layers include preserved experimental structures and validati
 including:
 
 - early resonance-window prototypes,
+
 - accumulation-layer experiments,
+
 - coherence-retention transitions,
+
 - hybrid acoustic/electromagnetic retention regimes,
+
 - nonlinear stabilization environments,
+
 - perturbation-response simulations,
+
 - retained-domain reconstruction pathways,
+
 - and long-duration operational persistence experiments.
 
 The objective of preserving the complete experimental chain is to maintain:
 
 - operational traceability,
+
 - reproducibility,
+
 - theorem evolution continuity,
+
 - validation transparency,
+
 - and historical reconstruction integrity
 
 across multiple stages of framework development.
 
 Historical validation chains and reconstruction archives are progressively integrated into the repository as part of the long-term operational research structure.
 
----
-
 ## Repository Architecture Philosophy
 
 The repository is intentionally designed as:
 
 - an evolving operational framework,
+
 - a retained-synthesis research environment,
+
 - and a long-term proof-chain architecture
 
 rather than a closed static publication.
@@ -1704,11 +1775,10 @@ rather than a closed static publication.
 The framework therefore preserves both:
 
 - formal theorem structures,
+
 - and experimental operational evolution
 
 across interconnected computational and theoretical layers.
-
----
 
 # Status
 
@@ -1717,58 +1787,76 @@ This repository represents an actively evolving operational research framework f
 The current framework formalizes:
 
 - the Resonance Window Theorem,
+
 - the Retention Theorem,
+
 - coherent accumulation invariants,
+
 - retained-domain persistence conditions,
+
 - operational synthesis logic,
+
 - and resonance-assisted stabilization dynamics.
 
 The repository additionally contains:
 
 - computational validation layers,
-- plasma-oriented operational experiments,
-- hybrid acoustic/electromagnetic retention models,
-- nonlinear stabilization environments,
-- adaptive recovery structures,
-- chaotic transition analysis,
-- and retained-domain reconstruction pathways.
 
----
+- plasma-oriented operational experiments,
+
+- hybrid acoustic/electromagnetic retention models,
+
+- nonlinear stabilization environments,
+
+- adaptive recovery structures,
+
+- chaotic transition analysis,
+
+- and retained-domain reconstruction pathways.
 
 ## Current Research Direction
 
 The framework investigates how operational systems may:
 
 - accumulate coherent structural contribution,
+
 - maintain positive structural balance,
+
 - preserve retained organizational continuity,
+
 - survive perturbation conditions,
+
 - recover after destabilization,
+
 - and maintain operational persistence after reduction of external driving.
 
 The repository therefore focuses not only on resonance excitation itself, but also on:
 
 - retention capability,
-- structural survivability,
-- adaptive stabilization,
-- and long-term operational continuity.
 
----
+- structural survivability,
+
+- adaptive stabilization,
+
+- and long-term operational continuity.
 
 ## Future Development
 
 Future releases may include:
 
 - extended retained-domain analysis,
+
 - adaptive coherence reconstruction models,
+
 - additional nonlinear validation environments,
+
 - multi-medium resonance interaction layers,
+
 - expanded operational synthesis criteria,
+
 - and extended perturbation survivability architectures.
 
 The repository is intentionally maintained as an evolving operational research structure rather than a closed finalized model.
-
----
 
 ## Framework Scope
 
@@ -1781,28 +1869,32 @@ Its operational domain is explicitly limited to:
 Within this domain, the framework investigates how:
 
 - coherent accumulation,
+
 - resonance-assisted organization,
+
 - structural retention,
+
 - adaptive stabilization,
+
 - and operational persistence
 
 interact dynamically over time.
-
----
 
 ## Repository Status
 
 The repository currently contains:
 
 - formal theorem structures,
+
 - operational synthesis models,
+
 - preserved experimental reconstruction chains,
+
 - validation environments spanning v1 → v35,
+
 - and progressive computational proof-chain architectures.
 
 Historical reconstruction layers and additional experimental archives continue to be progressively integrated into the repository.
-
----
 
 ## Author
 
