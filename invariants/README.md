@@ -7,9 +7,8 @@ The invariant layer defines the minimum structural conditions required for valid
 The framework is built around two connected invariants:
 
 1. Accumulated Positive Structural Work
-2. Positive Balance Over Completed Periods
 
----
+2. Positive Balance Over Completed Periods
 
 # Invariant Θ_N
 
@@ -29,11 +28,9 @@ W_period(k)
 
 represents the accumulated positive structural contribution over one completed period.
 
----
-
 ## Interpretation
 
-Invariant Θ_N prevents temporary phase coherence from being incorrectly classified as synthesis.
+Invariant Θ_N prevents temporary phase synchronization / coherence-support response from being incorrectly classified as synthesis.
 
 A transient coherent response may occur without producing a retained structure.
 
@@ -47,8 +44,6 @@ accumulated structural formation.
 
 Only states exceeding the critical accumulated-work threshold may enter retained synthesis conditions.
 
----
-
 # Invariant ∫(C−P)dt
 
 ## Statement
@@ -59,13 +54,9 @@ For completed periods:
 
 where:
 
-C(t)
-→ coherent structural contribution
+C(t) → general endogenous structural coherence and regenerative support of retained organizational persistence
 
-P(t)
-→ dissipative or destructive contribution
-
----
+P(t) → dissipative loss, destabilizing pressure, fragmentation pressure, or structural degradation load
 
 ## Interpretation
 
@@ -78,10 +69,10 @@ A valid synthesized state requires positive structural balance over completed pe
 The invariant therefore filters:
 
 - transient synchronization
-- unstable phase spikes
-- non-retained coherent responses
 
----
+- unstable phase spikes
+
+- non-retained coherent responses
 
 # Invariant Interaction
 
@@ -94,7 +85,9 @@ Positive balance alone is insufficient.
 A retained synthesized state requires:
 
 - accumulated positive structural work
+
 - positive balance over completed periods
+
 - retained-domain stability
 
 The invariant layer therefore acts as the structural admission filter of the resonance window framework.
