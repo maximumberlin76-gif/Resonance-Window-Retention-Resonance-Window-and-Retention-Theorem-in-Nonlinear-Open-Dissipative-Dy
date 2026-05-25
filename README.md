@@ -394,6 +394,42 @@ A resonance window does not create arbitrary organization.
 
 It defines the operational region in which stable organization becomes dynamically possible under coherent accumulation, retention, and stability constraints.
 
+# EDS / EDC Continuity Layer
+
+The Resonance Window and Retention framework is operationally connected to the Endogenous Dynamic Stability / Endogenous Dynamic Criticality layer.
+
+The process does not begin with criticality.
+
+It begins with retained dynamic stability:
+
+- C(t) > P(t)
+
+where:
+
+- C(t) represents general endogenous structural coherence;
+- P(t) represents structural load, destabilizing pressure, fragmentation pressure, and operational maintenance cost.
+
+As the stability margin compresses:
+
+- C(t) → P(t)
+
+the system approaches the endogenous critical regime.
+
+This transition defines the bridge:
+
+- Endogenous Dynamic Stability (EDS)
+- compression of the stability margin
+- Endogenous Dynamic Criticality (EDC)
+- resonance-window accessibility or compression
+- accumulated coherent structural work
+- retention or fragmentation
+
+Therefore, a resonance window is not an independent event.
+
+It emerges only within a dynamic stability / criticality context.
+
+The resonance window becomes operationally meaningful only if the system can accumulate coherent structural work and preserve retained-domain persistence after reduction or removal of external forcing.
+
 # Parameter Dictionary
 
 The framework uses the following operational variables, parameters, and stability conditions.
@@ -493,6 +529,54 @@ Represents the effective endogenous rate of approach toward the critical transit
 Dimensionless canonical coherence variable after critical rescaling.
 
 Represents the universal reduced-order dynamics near endogenous critical transition.
+
+# Why the Scaling Is Cubic
+
+The delay scaling:
+
+- t_delay ~ v^(−1/3)
+
+is not introduced as an arbitrary exponent.
+
+It follows from the reduced endogenous critical form:
+
+- dC/dt = vtC − C³
+
+where:
+
+- vtC represents drift-driven growth of the endogenous structural coherence variable near the critical regime;
+- −C³ represents nonlinear saturation of structural coherence growth.
+
+The cubic term is used because retained structural stability is not treated as a one-dimensional or purely quadratic correction.
+
+A retained operational regime must preserve organization as a volumetric structural condition.
+
+Therefore, the saturation of coherence growth is represented as a third-order nonlinear constraint.
+
+A quadratic term would describe pairwise or surface-like limitation.
+
+The cubic term represents volumetric stabilization, internal compatibility, and nonlinear self-interaction of the retained regime.
+
+This is why the reduced critical form uses:
+
+- −C³
+
+rather than:
+
+- −C²
+
+As a result, the available stabilization delay scales as the inverse cubic root of the endogenous drift velocity:
+
+- t_delay ~ v^(−1/3)
+
+Operationally:
+
+- linear drift moves the system toward criticality;
+- cubic saturation limits structural coherence growth;
+- three-dimensional retained organization requires third-order nonlinear stabilization;
+- faster endogenous drift compresses available stabilization time.
+
+Thus, the exponent −1/3 follows from the cubic saturation structure of the reduced EDC regime.
 
 - Ω(t)
 
