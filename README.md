@@ -1,4 +1,12 @@
-# Resonance Window Theorem and Retention Theorem
+# Resonance Retention and Synthesis Framework
+
+<p align="center">
+  <img
+    src="assets/fractal_spherical_plasma_retention_architecture_EN.png"
+    alt="Fractal spherical plasma retention architecture: acoustic topology formation, electromagnetic dynamic retention, and emergency magnetic containment"
+    width="100%"
+  />
+</p>
 
 ## Operational Retention & Synthesis Framework for Nonlinear Dissipative Open Dynamic Systems
 
