@@ -1,0 +1,93 @@
+name: Apply Evidence Correction
+
+"on":
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apply-evidence-correction
+  cancel-in-progress: false
+
+jobs:
+  apply-correction:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Compile correction script
+        run: |
+          python3 -m py_compile tools/correct_evidence_status.py
+          rm -rf tools/__pycache__
+
+      - name: Apply correction
+        run: python3 tools/correct_evidence_status.py
+
+      - name: Verify changed file boundary
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          printf '%s\n' \
+            'EVIDENCE_STATUS.md' \
+            'FINAL_THEOREM_PACKAGE_REBUILT_TRUE.zip' \
+            'README.md' \
+            'experimental_historical_archive/README.md' \
+            'resonance_system_v35_1_AR_HE_HYBRID_ACOUSTIC_EM_RETENTION_TRUE.zip' \
+            'resonance_system_v35_2_AR_HE_H_DEEP_HYBRID_TESTS_TRUE.zip' \
+            'resonance_system_v35_3_HYBRID_RETENTION_THEOREM_PACKAGE_TRUE.zip' \
+            'resonance_system_v35_HYBRID_MULTI_GAS_REGIME_MATRIX_TRUE.zip' \
+            'theorems/README.md' \
+            | sort > /tmp/expected-files.txt
+
+          git status --porcelain=v1 \
+            | cut -c4- \
+            | sort > /tmp/actual-files.txt
+
+          diff -u \
+            /tmp/expected-files.txt \
+            /tmp/actual-files.txt
+
+          echo "Changed-file boundary verified."
+
+      - name: Verify repository diff
+        run: |
+          git diff --check
+          git status --short
+          git diff --stat
+
+      - name: Commit correction
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            EVIDENCE_STATUS.md \
+            FINAL_THEOREM_PACKAGE_REBUILT_TRUE.zip \
+            README.md \
+            experimental_historical_archive/README.md \
+            resonance_system_v35_1_AR_HE_HYBRID_ACOUSTIC_EM_RETENTION_TRUE.zip \
+            resonance_system_v35_2_AR_HE_H_DEEP_HYBRID_TESTS_TRUE.zip \
+            resonance_system_v35_3_HYBRID_RETENTION_THEOREM_PACKAGE_TRUE.zip \
+            resonance_system_v35_HYBRID_MULTI_GAS_REGIME_MATRIX_TRUE.zip \
+            theorems/README.md
+
+          if git diff --cached --quiet; then
+            echo "No correction changes were staged."
+            exit 1
+          fi
+
+          git commit \
+            -m "Correct evidence classification and critical scaling"
+
+          git push \
+            origin \
+            "HEAD:${GITHUB_REF_NAME}"
