@@ -898,7 +898,7 @@ def patch_config(
     values: dict[str, str],
 ) -> None:
     path = root / "configs/config.json"
-        config = json.loads(read(path))
+    config = json.loads(read(path))
     config.update(values)
     write_json(path, config)
 
