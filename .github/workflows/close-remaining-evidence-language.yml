@@ -1,0 +1,112 @@
+name: Close Remaining Evidence Language
+
+"on":
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: close-remaining-evidence-language
+  cancel-in-progress: false
+
+jobs:
+  close-evidence-language:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Compile closure script
+        run: |
+          python3 -m py_compile tools/close_remaining_evidence_language.py
+          rm -rf tools/__pycache__
+
+      - name: Apply and verify remaining corrections
+        run: python3 tools/close_remaining_evidence_language.py
+
+      - name: Remove completed one-time correction files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          rm -f \
+            .github/workflows/apply-evidence-correction.yml \
+            .github/workflows/close-remaining-evidence-language.yml \
+            tools/correct_evidence_status.py \
+            tools/close_remaining_evidence_language.py
+
+      - name: Verify changed file boundary
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          printf '%s\n' \
+            '.github/workflows/apply-evidence-correction.yml' \
+            '.github/workflows/close-remaining-evidence-language.yml' \
+            'EVIDENCE_STATUS.md' \
+            'FINAL_THEOREM_PACKAGE_REBUILT_TRUE.zip' \
+            'README.md' \
+            'experimental_historical_archive/README.md' \
+            'resonance_system_v35_HYBRID_MULTI_GAS_REGIME_MATRIX_TRUE.zip' \
+            'tools/close_remaining_evidence_language.py' \
+            'tools/correct_evidence_status.py' \
+            | sort > /tmp/expected-files.txt
+
+          git status --porcelain=v1 \
+            | cut -c4- \
+            | sort > /tmp/actual-files.txt
+
+          diff -u \
+            /tmp/expected-files.txt \
+            /tmp/actual-files.txt
+
+          echo "Changed-file boundary verified."
+
+      - name: Verify public terminology closure
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if grep -RInE \
+            --exclude='*.zip' \
+            --exclude-dir='.git' \
+            'Experimental Validation Framework|Experimental Validation Layer|operational validation architecture|plasma-oriented validation environments|operational validation architectures|hybrid validation layers|theorem validation chains|invariant validation|retained-domain validation|known_valid_ratio|index for experimental validation packages|Deep hybrid validation|Retention-Based Validation|structured proof-chain and operational validation archive|computational validation structure' \
+            .
+          then
+            echo "Stale public evidence terminology remains."
+            exit 1
+          fi
+
+          echo "Public terminology closure verified."
+
+      - name: Verify repository diff
+        run: |
+          git diff --check
+          git status --short
+          git diff --stat
+
+      - name: Commit closure
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No closure changes were staged."
+            exit 1
+          fi
+
+          git commit \
+            -m "Close remaining evidence-language inconsistencies"
+
+          git push \
+            origin \
+            "HEAD:${GITHUB_REF_NAME}"
