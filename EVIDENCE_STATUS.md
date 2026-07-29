@@ -35,3 +35,19 @@ The exponent is determined by the simultaneous balance of the derivative, drift,
 - one frequency convention throughout equations, code, and reports
 - separate diagnostics for phase order, general coherence, and endogenous contribution
 - post-drive comparison against control over a defined retention interval
+
+## Public-Language Closure
+
+The remaining public-facing evidence labels were synchronized after the first corrective pass.
+
+Closed items:
+
+- root repository sections now distinguish computational evidence, evaluation, scoring, screening, and independent dynamic evidence,
+
+- the historical archive README now identifies preserved packages as computational history rather than current proof,
+
+- v35 uses `legacy_reference_ratio` for the historical input coefficient without changing numerical rankings,
+
+- the final theorem package identifies separate versioned packages as computational evidence packages,
+
+- and obsolete one-time correction workflow files are removed after the closure run.

@@ -54,7 +54,7 @@ The repository combines:
 
 - retained-domain stability conditions,
 
-- computational validation frameworks,
+- computational evidence and evaluation frameworks,
 
 - and hybrid acoustic/electromagnetic design-scoring and configuration-screening packages.
 
@@ -82,7 +82,7 @@ A valid synthesized regime must satisfy:
 
 - and post-forcing operational stability.
 
-The repository is intentionally organized as a proof-chain and operational validation architecture rather than a single isolated publication.
+The repository is intentionally organized as a proof-chain and operational evidence architecture rather than a single isolated publication.
 
 Its objective is not only to present formal structures, but also to preserve:
 
@@ -92,7 +92,7 @@ Its objective is not only to present formal structures, but also to preserve:
 
 - theorem evolution,
 
-- validation transparency,
+- evidence-status transparency,
 
 - and experimental reconstruction pathways
 
@@ -268,7 +268,7 @@ The framework therefore evaluates:
 
 - and post-forcing stability.
 
-The plasma models contained in this repository are operational validation frameworks for a broader class of nonlinear dissipative open dynamic systems in which structure formation depends on:
+The plasma models contained in this repository are computational evaluation frameworks for a broader class of nonlinear dissipative open dynamic systems in which structure formation depends on:
 
 - coherent accumulation,
 
@@ -1467,133 +1467,55 @@ It defines the admissible operational region in which retained organizational st
 
 - and operational survivability over time.
 
-# Experimental Validation Framework
+# Computational Evidence and Evaluation Framework
 
-The repository contains computational and experimental validation layers designed to investigate retained operational stability in nonlinear dissipative open dynamic systems.
+The repository contains formal criteria, historical computational archives, deterministic design-space prioritization, engineering scoring, and Monte Carlo configuration-screening packages for retained operational stability in nonlinear dissipative open dynamic systems.
 
-The validation framework is not limited to static equilibrium analysis or instantaneous confinement behavior.
+These layers support reconstruction, candidate comparison, parameter-space exploration, and evidence classification. They do not by themselves constitute independent time-resolved dynamic or experimental validation.
 
-Instead, the repository evaluates:
+The computational chain addresses:
 
-- resonance-window entry,
+- resonance-window entry criteria,
 
-- coherent accumulation dynamics,
+- coherent accumulation proxies and invariants,
 
-- transient destabilization,
+- transient destabilization and chaotic-transition scenarios,
 
-- chaotic transition behavior,
+- retained-domain criteria,
 
-- retained-domain formation,
+- adaptive stabilization and recovery scenarios,
 
-- adaptive stabilization,
+- post-forcing persistence requirements,
 
-- recovery capability,
+- and explicit boundaries between formal claims, historical simulations, scoring models, and screening results.
 
-- and post-forcing operational persistence.
+## Evidence Classification
 
-The objective of the validation framework is to determine whether operational organization may remain structurally stable after reduction of external driving.
+The repository separates theorem-level definitions and acceptance criteria, historical executable reconstruction packages, deterministic design-space prioritization, deterministic engineering scoring, Monte Carlo configuration screening, and successor requirements for independent dynamic evidence.
 
-## Validation Philosophy
+Transient amplification, temporary synchronization, or externally forced coherence-support responses are not treated as proof of retained synthesis.
 
-Within the framework, experimental validation is not defined by short-lived energetic effects alone.
+## Plasma Evaluation Layers
 
-Transient amplification, temporary synchronization, or externally forced coherence spikes are insufficient.
+The plasma-oriented packages examine configured hybrid acoustic/electromagnetic regimes, multi-gas candidate sequences, perturbation scenarios, retention criteria, coherence-reconstruction pathways, and nonlinear stabilization assumptions.
 
-Operational validation requires investigation of:
-
-- retained organizational persistence,
-
-- structural continuity,
-
-- dissipative balance,
-
-- adaptive survivability,
-
-- and long-term operational stability.
-
-The framework therefore evaluates not only excitation intensity, but also the ability of a system to preserve retained organizational coherence over time.
-
-## Plasma Validation Layers
-
-The repository contains plasma-oriented validation environments designed to investigate resonance-assisted retention dynamics under nonlinear dissipative conditions.
-
-These environments include:
-
-- hybrid acoustic/electromagnetic operational regimes,
-
-- multi-gas plasma interaction tests,
-
-- perturbation-response analysis,
-
-- retention survivability experiments,
-
-- coherence reconstruction pathways,
-
-- and nonlinear stabilization behavior.
-
-The plasma models contained in the repository function as operational validation architectures for a broader class of nonlinear dissipative open dynamic systems rather than isolated plasma-only models.
+The active v35-series packages are classified by their actual computational operations. Their outputs are candidate rankings and screening results, not measurements of physical channel superiority.
 
 ## Chaotic Transition Analysis
 
-Additional repository layers investigate system behavior near instability boundaries and fragmentation thresholds.
+Historical and formal layers examine chaotic-transition corridors, coherence fragmentation, nonlinear destabilization, metastable states, adaptive relock behavior, and resonance re-entry conditions.
 
-These layers evaluate:
-
-- chaotic transition corridors,
-
-- coherence fragmentation,
-
-- nonlinear destabilization,
-
-- metastable operational states,
-
-- adaptive relock behavior,
-
-- and resonance re-entry conditions.
-
-The framework investigates whether coherent operational organization may be reconstructed after partial structural degradation.
-
-This allows evaluation not only of stable retained regimes, but also of:
-
-- recovery dynamics,
-
-- adaptive stabilization,
-
-- and retained-domain reconstruction after perturbation.
+These layers preserve model evolution and candidate mechanisms for later controlled testing.
 
 ## Recovery and Adaptive Stabilization
 
-The validation framework additionally investigates:
+The framework defines recovery survivability, post-instability persistence, adaptive coherence reconstruction, and retained-domain restoration as operational research targets.
 
-- recovery survivability,
+## Retention-Oriented Acceptance Criteria
 
-- post-instability structural persistence,
+A retained candidate requires accumulated positive structural work, positive structural balance over completed periods, retained-domain membership, bounded perturbation response, and persistence after reduction of external driving.
 
-- operational resilience,
-
-- adaptive coherence reconstruction,
-
-- and retained-domain restoration pathways.
-
-The framework therefore evaluates whether operational systems may preserve organizational continuity under destabilizing conditions rather than only under idealized equilibrium states.
-
-## Retention-Oriented Validation Criteria
-
-Within the framework, stabilization is evaluated not by instantaneous excitation alone, but by:
-
-- retention duration,
-
-- structural persistence,
-
-- dissipative balance,
-
-- perturbation survivability,
-
-- recovery capability,
-
-- and operational continuity after forcing reduction.
-
-The central validation condition is:
+The central formal condition is:
 
 - F_ext(t) → 0
 
@@ -1601,39 +1523,15 @@ while:
 
 - x(t) ∈ Ω_ret
 
-continues to hold over operational time intervals.
+continues to hold over the defined retention interval.
 
-This separates:
+## Computational Objectives
 
-- transient excitation,
-
-- externally maintained organization,
-
-- and retained operational synthesis.
-
-## Experimental Objectives
-
-The repository experimentally investigates:
-
-- resonance-assisted self-organization,
-
-- coherent accumulation,
-
-- operational retention efficiency,
-
-- nonlinear stabilization,
-
-- adaptive recovery behavior,
-
-- perturbation-response dynamics,
-
-- and post-instability survivability.
-
-The validation framework therefore functions as a long-term operational research architecture for investigating retained synthesis and structural persistence in nonlinear dissipative open dynamic systems.
+The repository preserves executable reconstruction, parameter-space exploration, candidate ranking, theorem continuity, and explicit evidence boundaries for resonance-assisted organization and retention dynamics.
 
 # Repository Structure
 
-The repository is intentionally organized as a structured proof-chain and operational validation archive rather than a single isolated publication.
+The repository is intentionally organized as a structured proof-chain and operational evidence archive rather than a single isolated publication.
 
 The objective is not only to present formal theorem structures, but also to preserve:
 
@@ -1645,7 +1543,7 @@ The objective is not only to present formal theorem structures, but also to pres
 
 - theorem evolution,
 
-- validation transparency,
+- evidence-status transparency,
 
 - experimental reconstruction pathways,
 
@@ -1657,7 +1555,7 @@ The repository therefore functions simultaneously as:
 
 - an operational synthesis framework,
 
-- a computational validation structure,
+- a computational evidence structure,
 
 - and an experimental reconstruction environment
 
@@ -1723,21 +1621,21 @@ Repository section:
 
 - /resonance_process/
 
-## Experimental Validation Layer
+## Computational Evidence Layer
 
-The experimental layer contains computational and operational validation frameworks including:
+The computational evidence layer contains:
 
-- plasma operational simulations,
+- historical plasma simulations,
 
-- hybrid acoustic/electromagnetic retention regimes,
+- active design-space prioritization and engineering-scoring packages,
 
-- perturbation-response analysis,
+- Monte Carlo configuration screening,
 
-- nonlinear stabilization testing,
+- perturbation and recovery scenarios,
 
-- recovery survivability environments,
+- reproducibility records,
 
-- and adaptive reconstruction models.
+- and evidence-status documentation.
 
 Repository sections may include:
 
@@ -1801,7 +1699,7 @@ The framework therefore evaluates not only stable organization, but also the pos
 
 The repository additionally preserves progressive experimental and computational reconstruction chains spanning multiple operational generations.
 
-Current repository layers include preserved experimental structures and validation archives from:
+Current repository layers include preserved computational structures and evidence archives from:
 
 - v1 → v35
 
@@ -1831,13 +1729,13 @@ The objective of preserving the complete experimental chain is to maintain:
 
 - theorem evolution continuity,
 
-- validation transparency,
+- evidence-status transparency,
 
 - and historical reconstruction integrity
 
 across multiple stages of framework development.
 
-Historical validation chains and reconstruction archives are progressively integrated into the repository as part of the long-term operational research structure.
+Historical computational chains and reconstruction archives are progressively integrated into the repository as part of the long-term operational research structure.
 
 ## Repository Architecture Philosophy
 
@@ -1879,7 +1777,7 @@ The current framework formalizes:
 
 The repository additionally contains:
 
-- computational validation layers,
+- computational evidence layers,
 
 - plasma-oriented operational experiments,
 
@@ -1927,7 +1825,7 @@ Future releases may include:
 
 - adaptive coherence reconstruction models,
 
-- additional nonlinear validation environments,
+- additional nonlinear evaluation environments,
 
 - multi-medium resonance interaction layers,
 
@@ -1969,7 +1867,7 @@ The repository currently contains:
 
 - preserved experimental reconstruction chains,
 
-- validation environments spanning v1 → v35,
+- computational evidence archives spanning v1 → v35,
 
 - and progressive computational proof-chain architectures.
 
