@@ -12,6 +12,18 @@
 
 This repository presents a theoretical and computational framework for resonance-driven self-organization, coherent accumulation, retained operational regimes, and dynamic synthesis in nonlinear dissipative open dynamic systems.
 
+## Computational Evidence Boundary
+
+The theorem layer and the computational package layer have different evidential functions.
+
+The active v35, v35.1, and v35.2 packages are design-space prioritization, engineering scoring, and Monte Carlo configuration-screening models.
+
+They reproduce configured calculations but do not independently integrate a plasma or oscillator state through time. They therefore do not constitute time-resolved dynamic validation of acoustic, electromagnetic, or hybrid channel superiority.
+
+The v35.3 package preserves the Hybrid Retention Theorem with the corrected v35.2 screening package. Historical ZIP archives remain unchanged.
+
+See [EVIDENCE_STATUS.md](EVIDENCE_STATUS.md).
+
 The framework is not proposed as a universal theory of all systems.
 
 Its operational domain is explicitly limited to:
@@ -44,7 +56,7 @@ The repository combines:
 
 - computational validation frameworks,
 
-- and hybrid acoustic/electromagnetic plasma retention experiments.
+- and hybrid acoustic/electromagnetic design-scoring and configuration-screening packages.
 
 The framework distinguishes:
 
@@ -538,54 +550,29 @@ Dimensionless canonical coherence variable after critical rescaling.
 
 Represents the universal reduced-order dynamics near endogenous critical transition.
 
-# Why the Scaling Is Cubic
+# Cubic Critical Form and Scaling
 
-The delay scaling:
+Near the critical regime, the reduced form is:
 
-- t_delay ~ v^(−1/3)
+  * dC/dt = vtC − C³
 
-is not introduced as an arbitrary exponent.
+Use the rescaling:
 
-It follows from the reduced endogenous critical form:
+  * C = v^(1/4)y
+  * t = v^(−1/2)τ
 
-- dC/dt = vtC − C³
+The derivative, drift, and cubic terms then carry the same exponent:
 
-where:
+  * dC/dt ~ v^(3/4)
+  * vtC ~ v^(3/4)
+  * C³ ~ v^(3/4)
 
-- vtC represents drift-driven growth of the endogenous structural coherence variable near the critical regime;
-- −C³ represents nonlinear saturation of structural coherence growth.
+Therefore:
 
-The cubic term is used because retained structural stability is not treated as a one-dimensional or purely quadratic correction.
+  * C ~ v^(1/4)
+  * t_delay ~ v^(−1/2)
 
-A retained operational regime must preserve organization as a volumetric structural condition.
-
-Therefore, the saturation of coherence growth is represented as a third-order nonlinear constraint.
-
-A quadratic term would describe pairwise or surface-like limitation.
-
-The cubic term represents volumetric stabilization, internal compatibility, and nonlinear self-interaction of the retained regime.
-
-This is why the reduced critical form uses:
-
-- −C³
-
-rather than:
-
-- −C²
-
-As a result, the available stabilization delay scales as the inverse cubic root of the endogenous drift velocity:
-
-- t_delay ~ v^(−1/3)
-
-Operationally:
-
-- linear drift moves the system toward criticality;
-- cubic saturation limits structural coherence growth;
-- three-dimensional retained organization requires third-order nonlinear stabilization;
-- faster endogenous drift compresses available stabilization time.
-
-Thus, the exponent −1/3 follows from the cubic saturation structure of the reduced EDC regime.
-
+The exponent follows from the simultaneous balance of the time derivative, the drift term, and the cubic saturation term. It does not follow from the cubic term alone.
 - Ω(t)
 
 Dynamic resonance window representing the admissible operational region of state space.
@@ -1322,7 +1309,7 @@ This separates:
 
 - and retained operational synthesis.
 
-The hybrid plasma model therefore functions as an experimental validation architecture for broader resonance-retention dynamics in nonlinear dissipative open dynamic systems.
+The hybrid plasma model therefore functions as an engineering hypothesis and candidate control architecture. The active v35-series packages rank configured candidates but do not independently validate the physical channel roles.
 
 # Operational Synthesis Model
 

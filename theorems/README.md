@@ -89,6 +89,9 @@ Temporary synchronization is not identical to retained synthesis.
 A resonance window becomes operationally meaningful only when coherent accumulation and retained-domain persistence are both satisfied.
 
 # Hybrid Retention Theorem
+## Evidence Boundary
+
+The theorem defines a candidate channel-separation architecture. The active v35.1 scoring package and v35.2 Monte Carlo screening package evaluate configured assumptions; they do not provide independent time-resolved dynamic validation of acoustic entry, electromagnetic retention, or hybrid superiority.
 
 ## Statement
 
@@ -98,9 +101,9 @@ F_total(t) = F_acoustic(t) + F_EM(t)
 
 where:
 
-F_acoustic → initiates entry into the resonance window → accelerates Θ_N accumulation
+F_acoustic → candidate role: resonance-window entry and Θ_N accumulation
 
-F_EM → stabilizes Ω_ret → suppresses phase dispersion → maintains retained organization
+F_EM → candidate role: Ω_ret stabilization, phase-dispersion suppression, and retained organization
 
 A retained state exists only if:
 

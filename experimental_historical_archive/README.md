@@ -1,4 +1,4 @@
-# Experimental Proof-Chain
+# Historical Computational Proof-Chain
 
 This section contains the experimental validation structure of the framework for nonlinear dissipative open dynamic systems.
 
@@ -36,23 +36,13 @@ The experimental layer includes:
 
 - long-duration retention analysis
 
-# Hybrid Validation Logic
+# Historical Hybrid Hypothesis
 
-The experimental framework validates the separation between:
+The archived packages encode and explore a proposed separation between entry and retention mechanisms.
 
-entry mechanisms
+The historical channel assignments were acoustic entry, electromagnetic retention support, and a hybrid candidate architecture.
 
-and
-
-retention mechanisms.
-
-The simulations demonstrate that:
-
-- acoustic forcing accelerates resonance-window entry
-
-- electromagnetic stabilization suppresses dispersion
-
-- hybrid driving improves retained organization over time
+These assignments are hypotheses embedded in the historical configurations. They are not independently established by the active v35-series scoring and screening packages.
 
 # Experimental Progression
 
@@ -129,3 +119,12 @@ This section contains:
 - theorem validation chains
 
 - reproducibility structures
+
+
+# Historical Evidence Boundary
+
+The ZIP archives in this directory remain byte-for-byte unchanged.
+
+The cited v30, v31, and v33 generations do not include matched `F_ext = 0` controls in the published package series; many cited coupling regimes are strongly supercritical; legacy `C` fields are model-specific `R`-dependent proxies; and the cyclic-frequency / angular-frequency convention requires correction in a successor engine.
+
+These archives document model evolution and executable history. They are not current independent validation evidence for external-forcing retention.
