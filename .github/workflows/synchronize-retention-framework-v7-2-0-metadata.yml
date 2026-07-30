@@ -1,0 +1,931 @@
+name: Synchronize Retention Framework v7.2.0 Metadata
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: synchronize-retention-framework-v7-2-0-metadata-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  synchronize-release-metadata:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+      WORKFLOW_PATH: .github/workflows/synchronize-retention-framework-v7-2-0-metadata.yml
+      STALE_WORKFLOW_PATH: .github/workflows/rename-plasma-architecture-image.yml
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install validation dependency
+        run: python -m pip install pyyaml
+
+      - name: Verify apply and validate atomic transaction
+        shell: bash
+        run: |
+          set -euo pipefail
+          python <<'PY'
+          from __future__ import annotations
+
+          import hashlib
+          import json
+          import os
+          import re
+          import subprocess
+          import tempfile
+          import zipfile
+          from fractions import Fraction
+          from pathlib import Path, PurePosixPath
+          from urllib.parse import unquote
+
+          import yaml
+
+          CURRENT = Path(os.environ["WORKFLOW_PATH"])
+          STALE = Path(os.environ["STALE_WORKFLOW_PATH"])
+          IMAGE = Path(
+              "assets/"
+              "fractal_spherical_plasma_retention_architecture_EN.png"
+          )
+          REPOSITORY_URL = (
+              "https://github.com/maximumberlin76-gif/"
+              "Resonance-Window-Retention-Resonance-Window-and-"
+              "Retention-Theorem-in-Nonlinear-Open-Dissipative-Dy"
+          )
+          SOURCE_COUNT = 83
+          SOURCE_TREE = (
+              "537aa841f612c9dbbf34ccf46649cc8881e9d984b460a420e0bb0a224e9b2263"
+          )
+          TARGET_COUNT = 82
+          TARGET_TREE = (
+              "39155afeaa2b4086db79cfd8a039e9dc95148b60fc60b3004eaeba87b36ae2b8"
+          )
+          SOURCE_HASHES = {
+              "README.md":
+                  "6c366a1a37c67dd7e01ecc256d5bcd8b0a4d3499c6984f095b8998200d26c7a4",
+              "CITATION.cff":
+                  "ea36e66451349adc21188a69c4bbb0734442400a6b356dc7cbdfb5915f6b2684",
+              STALE.as_posix():
+                  "1416b9a18ec2be2b5f4a2cb4c8d86a6fc0953717b74cc26b318751be65f196ae",
+              IMAGE.as_posix():
+                  "1bc6f0523a60e5d8439feb8f3214578886011a4d3988f5afddcebd281f003783",
+          }
+          TARGET_HASHES = {
+              "README.md":
+                  "c4d06afce704d8cb616934de9b91e1dae5573163fa3e79170a94aef6ba5ab5fb",
+              "CITATION.cff":
+                  "c32b81d0731c9b265907d04c62edf2e147802ed1a92bb0514e87ba88851cb404",
+          }
+
+          def sha(path: Path) -> str:
+              return hashlib.sha256(path.read_bytes()).hexdigest()
+
+          def tree_digest(
+              exclude: set[str] | None = None,
+          ) -> tuple[int, str]:
+              excluded = exclude or set()
+              lines = []
+
+              for path in sorted(Path(".").rglob("*")):
+                  if not path.is_file() or ".git" in path.parts:
+                      continue
+
+                  relative = path.as_posix()
+
+                  if relative in excluded:
+                      continue
+
+                  lines.append(f"{sha(path)}  {relative}\n")
+
+              digest = hashlib.sha256(
+                  "".join(lines).encode()
+              ).hexdigest()
+
+              return len(lines), digest
+
+          def replace_once(
+              text: str,
+              old: str,
+              new: str,
+              label: str,
+          ) -> str:
+              count = text.count(old)
+
+              if count != 1:
+                  raise SystemExit(
+                      f"{label}: expected one source anchor, "
+                      f"found {count}"
+                  )
+
+              if new in text:
+                  raise SystemExit(
+                      f"{label}: target block already exists"
+                  )
+
+              return text.replace(old, new)
+
+          def atomic_write(changes: dict[Path, str]) -> None:
+              staged: list[tuple[Path, Path]] = []
+
+              try:
+                  for target, content in changes.items():
+                      descriptor, name = tempfile.mkstemp(
+                          prefix=f".{target.name}.",
+                          suffix=".tmp",
+                          dir=target.parent,
+                          text=True,
+                      )
+                      temporary = Path(name)
+
+                      with os.fdopen(
+                          descriptor,
+                          "w",
+                          encoding="utf-8",
+                          newline="",
+                      ) as handle:
+                          handle.write(content)
+                          handle.flush()
+                          os.fsync(handle.fileno())
+
+                      staged.append((temporary, target))
+
+                  for temporary, target in staged:
+                      os.replace(temporary, target)
+
+              finally:
+                  for temporary, _ in staged:
+                      temporary.unlink(missing_ok=True)
+
+          status = subprocess.run(
+              [
+                  "git",
+                  "status",
+                  "--porcelain=v1",
+                  "--untracked-files=all",
+              ],
+              check=True,
+              capture_output=True,
+              text=True,
+          ).stdout
+
+          if status:
+              raise SystemExit(
+                  "Checkout is not clean before application:\n"
+                  + status
+              )
+
+          workflows = sorted(
+              path.as_posix()
+              for path in Path(".github/workflows").glob("*")
+              if path.is_file()
+          )
+
+          expected_workflows = sorted(
+              [
+                  CURRENT.as_posix(),
+                  STALE.as_posix(),
+              ]
+          )
+
+          if workflows != expected_workflows:
+              raise SystemExit(
+                  "Unexpected workflow boundary. "
+                  f"Expected {expected_workflows}; got {workflows}"
+              )
+
+          for relative, expected in SOURCE_HASHES.items():
+              path = Path(relative)
+
+              if not path.is_file() or sha(path) != expected:
+                  actual = (
+                      sha(path)
+                      if path.is_file()
+                      else "MISSING"
+                  )
+
+                  raise SystemExit(
+                      f"Source-state mismatch for {relative}: "
+                      f"expected {expected}, got {actual}"
+                  )
+
+          count, digest = tree_digest(
+              {CURRENT.as_posix()}
+          )
+
+          if (count, digest) != (
+              SOURCE_COUNT,
+              SOURCE_TREE,
+          ):
+              raise SystemExit(
+                  "Source-tree mismatch: "
+                  f"expected {(SOURCE_COUNT, SOURCE_TREE)}, "
+                  f"got {(count, digest)}"
+              )
+
+          readme_path = Path("README.md")
+          citation_path = Path("CITATION.cff")
+
+          readme = replace_once(
+              readme_path.read_text(encoding="utf-8"),
+              "## Operational Retention & Synthesis Framework "
+              "for Nonlinear Dissipative Open Dynamic Systems\n\n"
+              "This repository presents",
+              "## Operational Retention & Synthesis Framework "
+              "for Nonlinear Dissipative Open Dynamic Systems\n\n"
+              "## Status\n\n"
+              "Operational Retention & Synthesis Framework "
+              "v7.2.0\n\n"
+              "This repository presents",
+              "README.md",
+          )
+
+          citation = replace_once(
+              citation_path.read_text(encoding="utf-8"),
+              'repository-code: "https://github.com/'
+              'maximumberlin76-gif/'
+              'Resonance-Window-Theorem-and-Retention-'
+              'Theorem-Framework"\n\n'
+              'license: Apache-2.0\n\n'
+              'version: "v2.4.0-philosophical-edition"',
+              f'repository-code: "{REPOSITORY_URL}"\n\n'
+              'license: Apache-2.0\n\n'
+              'version: "7.2.0"',
+              "CITATION.cff",
+          )
+
+          atomic_write(
+              {
+                  readme_path: readme,
+                  citation_path: citation,
+              }
+          )
+
+          STALE.unlink()
+
+          for relative, expected in TARGET_HASHES.items():
+              actual = sha(Path(relative))
+
+              if actual != expected:
+                  raise SystemExit(
+                      f"Target-state mismatch for {relative}: "
+                      f"expected {expected}, got {actual}"
+                  )
+
+          if readme.count(
+              "## Status\n\n"
+              "Operational Retention & Synthesis Framework "
+              "v7.2.0"
+          ) != 1:
+              raise SystemExit(
+                  "README v7.2.0 status block is not unique"
+              )
+
+          cff = yaml.safe_load(citation)
+          authors = cff.get("authors")
+
+          if (
+              not isinstance(authors, list)
+              or len(authors) != 1
+          ):
+              raise SystemExit(
+                  "Unexpected CITATION.cff author structure"
+              )
+
+          author = authors[0]
+
+          if (
+              cff.get("cff-version") != "1.2.0"
+              or cff.get("version") != "7.2.0"
+              or cff.get("repository-code")
+              != REPOSITORY_URL
+              or cff.get("license") != "Apache-2.0"
+              or author.get("family-names") != "Marnov"
+              or author.get("given-names") != "Maksym"
+              or author.get("orcid")
+              != "https://orcid.org/0009-0000-0832-9597"
+          ):
+              raise SystemExit(
+                  "CITATION.cff metadata validation failed"
+              )
+
+          required_math = {
+              "README.md": (
+                  "β + α = 1 − α + β = nβ",
+                  "α = 1/2",
+                  "β = 1/(2(n−1))",
+                  "t_delay ~ v^(−1/2)",
+                  "C_critical ~ "
+                  "g^(−1/(n−1))v^(1/(2(n−1)))",
+                  "## Geometric Dimensional Closure",
+                  "C → −C",
+              ),
+              "theorems/README.md": (
+                  "β + α = 1 − α + β = nβ",
+                  "α = 1/2",
+                  "β = 1/(2(n−1))",
+                  "t_delay ~ v^(−1/2)",
+                  "C_critical ~ "
+                  "g^(−1/(n−1))v^(1/(2(n−1)))",
+                  "## Geometric Dimensional Closure",
+                  "C → −C",
+              ),
+              "EVIDENCE_STATUS.md": (
+                  "dC/dt = vtC − gC^n",
+                  "t_delay ~ v^(−1/2)",
+                  "C_critical ~ "
+                  "g^(−1/(n−1))v^(1/(2(n−1)))",
+              ),
+          }
+
+          for relative, markers in required_math.items():
+              text = Path(relative).read_text(
+                  encoding="utf-8"
+              )
+
+              for marker in markers:
+                  if marker not in text:
+                      raise SystemExit(
+                          "Missing mathematical marker in "
+                          f"{relative}: {marker}"
+                      )
+
+          for n in range(2, 17):
+              alpha = Fraction(1, 2)
+              beta = Fraction(
+                  1,
+                  2 * (n - 1),
+              )
+
+              if not (
+                  beta + alpha
+                  == 1 - alpha + beta
+                  == n * beta
+              ):
+                  raise SystemExit(
+                      f"Exponent balance failed for n={n}"
+                  )
+
+          text_suffixes = {
+              ".md",
+              ".txt",
+              ".py",
+              ".json",
+              ".yaml",
+              ".yml",
+              ".cff",
+          }
+
+          obsolete = (
+              re.compile(
+                  r"(?:t_delay|t_critical)"
+                  r"[^\n]{0,100}(?:−|-)1/3"
+              ),
+              re.compile(
+                  r"inverse[- ]cube[- ]root",
+                  re.I,
+              ),
+              re.compile(
+                  r"v\^\((?:−|-)1/3\)"
+              ),
+              re.compile(
+                  r"v\^\(1/3\)"
+              ),
+          )
+
+          violations = []
+
+          for path in sorted(Path(".").rglob("*")):
+              if (
+                  not path.is_file()
+                  or ".git" in path.parts
+                  or path == CURRENT
+                  or path.suffix.lower()
+                  not in text_suffixes
+              ):
+                  continue
+
+              try:
+                  text = path.read_text(
+                      encoding="utf-8"
+                  )
+              except UnicodeDecodeError:
+                  continue
+
+              if path.suffix.lower() == ".json":
+                  json.loads(text)
+
+              for pattern in obsolete:
+                  for match in pattern.finditer(text):
+                      line = text.count(
+                          "\n",
+                          0,
+                          match.start(),
+                      ) + 1
+
+                      violations.append(
+                          f"{path}:{line}: "
+                          f"{match.group(0)!r}"
+                      )
+
+          if violations:
+              raise SystemExit(
+                  "Obsolete scaling markers remain:\n"
+                  + "\n".join(violations)
+              )
+
+          yaml_files = sorted(
+              set(Path(".").rglob("*.yml"))
+              | set(Path(".").rglob("*.yaml"))
+              | set(Path(".").rglob("*.cff"))
+          )
+
+          for path in yaml_files:
+              yaml.safe_load(
+                  path.read_text(encoding="utf-8")
+              )
+
+          link_pattern = re.compile(
+              r"!?\[[^\]]*\]\(([^)]+)\)"
+          )
+          checked_links = 0
+          broken = []
+
+          for document in sorted(
+              Path(".").rglob("*.md")
+          ):
+              text = document.read_text(
+                  encoding="utf-8"
+              )
+
+              for match in link_pattern.finditer(text):
+                  raw = (
+                      match.group(1)
+                      .strip()
+                      .strip("<>")
+                  )
+                  destination = raw.split()[0]
+
+                  if (
+                      not destination
+                      or destination.startswith(
+                          (
+                              "#",
+                              "http://",
+                              "https://",
+                              "mailto:",
+                              "data:",
+                          )
+                      )
+                  ):
+                      continue
+
+                  destination = unquote(
+                      destination.split("#", 1)[0]
+                  )
+
+                  if not destination:
+                      continue
+
+                  checked_links += 1
+
+                  target = (
+                      document.parent / destination
+                  ).resolve()
+
+                  if not target.exists():
+                      line = text.count(
+                          "\n",
+                          0,
+                          match.start(),
+                      ) + 1
+
+                      broken.append(
+                          f"{document}:{line} "
+                          f"-> {destination}"
+                      )
+
+          if broken:
+              raise SystemExit(
+                  "Broken internal Markdown links:\n"
+                  + "\n".join(broken)
+              )
+
+          if (
+              not IMAGE.is_file()
+              or sha(IMAGE)
+              != SOURCE_HASHES[IMAGE.as_posix()]
+          ):
+              raise SystemExit(
+                  "Finalized theorem image is missing "
+                  "or changed"
+              )
+
+          image_type = subprocess.run(
+              [
+                  "file",
+                  "--brief",
+                  "--mime-type",
+                  str(IMAGE),
+              ],
+              check=True,
+              capture_output=True,
+              text=True,
+          ).stdout.strip()
+
+          if image_type != "image/png":
+              raise SystemExit(
+                  "Finalized theorem image is not PNG"
+              )
+
+          if (
+              list(Path("assets").glob("file_*"))
+              or Path("assets/.gitkeep").exists()
+          ):
+              raise SystemExit(
+                  "Legacy image candidates or "
+                  "assets/.gitkeep remain"
+              )
+
+          archives = sorted(
+              Path(".").rglob("*.zip")
+          )
+
+          if len(archives) != 69:
+              raise SystemExit(
+                  "Expected 69 ZIP archives, "
+                  f"found {len(archives)}"
+              )
+
+          for archive_path in archives:
+              with zipfile.ZipFile(
+                  archive_path
+              ) as archive:
+                  bad = archive.testzip()
+
+                  if bad is not None:
+                      raise SystemExit(
+                          f"ZIP CRC failure in "
+                          f"{archive_path}: {bad}"
+                      )
+
+          active = [
+              Path(
+                  "FINAL_THEOREM_PACKAGE_REBUILT_TRUE.zip"
+              ),
+              Path(
+                  "resonance_system_v35_"
+                  "HYBRID_MULTI_GAS_REGIME_MATRIX_TRUE.zip"
+              ),
+              Path(
+                  "resonance_system_v35_1_"
+                  "AR_HE_HYBRID_ACOUSTIC_EM_"
+                  "RETENTION_TRUE.zip"
+              ),
+              Path(
+                  "resonance_system_v35_2_"
+                  "AR_HE_H_DEEP_HYBRID_TESTS_TRUE.zip"
+              ),
+              Path(
+                  "resonance_system_v35_3_"
+                  "HYBRID_RETENTION_THEOREM_"
+                  "PACKAGE_TRUE.zip"
+              ),
+          ]
+
+          manifest_pattern = re.compile(
+              r"([0-9a-fA-F]{64})\s{2}(.+)"
+          )
+          manifest_count = 0
+
+          for archive_path in active:
+              with zipfile.ZipFile(
+                  archive_path
+              ) as archive:
+                  manifests = [
+                      name
+                      for name in archive.namelist()
+                      if PurePosixPath(name).name
+                      in {
+                          "SHA256SUMS.txt",
+                          "sha256_manifest.txt",
+                      }
+                  ]
+
+                  if not manifests:
+                      raise SystemExit(
+                          "No checksum manifest in "
+                          f"{archive_path}"
+                      )
+
+                  for manifest_name in manifests:
+                      manifest_path = PurePosixPath(
+                          manifest_name
+                      )
+
+                      base = (
+                          manifest_path.parent.parent
+                          if manifest_path.parent.name
+                          == "checksums"
+                          else manifest_path.parent
+                      )
+
+                      manifest_text = archive.read(
+                          manifest_name
+                      ).decode()
+
+                      for line_number, line in enumerate(
+                          manifest_text.splitlines(),
+                          1,
+                      ):
+                          if not line.strip():
+                              continue
+
+                          match = (
+                              manifest_pattern.fullmatch(
+                                  line.strip()
+                              )
+                          )
+
+                          if match is None:
+                              raise SystemExit(
+                                  "Malformed manifest line "
+                                  f"{archive_path}:"
+                                  f"{manifest_name}:"
+                                  f"{line_number}"
+                              )
+
+                          expected, relative = (
+                              match.groups()
+                          )
+
+                          member = (
+                              base
+                              / PurePosixPath(relative)
+                          ).as_posix().removeprefix("./")
+
+                          try:
+                              data = archive.read(member)
+                          except KeyError as error:
+                              raise SystemExit(
+                                  "Manifest member missing: "
+                                  f"{archive_path}:{member}"
+                              ) from error
+
+                          actual = hashlib.sha256(
+                              data
+                          ).hexdigest()
+
+                          if (
+                              actual.lower()
+                              != expected.lower()
+                          ):
+                              raise SystemExit(
+                                  "Manifest mismatch: "
+                                  f"{archive_path}:{member}: "
+                                  f"expected {expected}, "
+                                  f"got {actual}"
+                              )
+
+                          manifest_count += 1
+
+          if manifest_count != 207:
+              raise SystemExit(
+                  "Expected 207 active manifest entries, "
+                  f"got {manifest_count}"
+              )
+
+          packages = [
+              (
+                  active[1],
+                  Path("."),
+              ),
+              (
+                  active[2],
+                  Path("."),
+              ),
+              (
+                  active[3],
+                  Path("."),
+              ),
+              (
+                  active[4],
+                  Path("experiment_v35_2"),
+              ),
+          ]
+
+          def directory_digest(root: Path) -> str:
+              lines = []
+
+              for path in sorted(root.rglob("*")):
+                  if path.is_file():
+                      lines.append(
+                          f"{sha(path)}  "
+                          f"{path.relative_to(root).as_posix()}"
+                          "\n"
+                      )
+
+              return hashlib.sha256(
+                  "".join(lines).encode()
+              ).hexdigest()
+
+          runs = 0
+
+          with tempfile.TemporaryDirectory() as temp:
+              temporary_root = Path(temp)
+
+              for archive_path, subdirectory in packages:
+                  package_root = (
+                      temporary_root / archive_path.stem
+                  )
+                  package_root.mkdir()
+
+                  with zipfile.ZipFile(
+                      archive_path
+                  ) as archive:
+                      archive.extractall(package_root)
+
+                  execution_root = (
+                      package_root / subdirectory
+                  ).resolve()
+
+                  engines = sorted(
+                      (
+                          execution_root / "scripts"
+                      ).glob("*.py")
+                  )
+                  smokes = sorted(
+                      (
+                          execution_root / "tests"
+                      ).glob("*.py")
+                  )
+
+                  if (
+                      len(engines) != 1
+                      or len(smokes) != 1
+                  ):
+                      raise SystemExit(
+                          "Unexpected executable boundary "
+                          f"in {archive_path}"
+                      )
+
+                  before = directory_digest(
+                      package_root
+                  )
+
+                  for script, require_smoke in (
+                      (
+                          engines[0],
+                          False,
+                      ),
+                      (
+                          smokes[0],
+                          True,
+                      ),
+                  ):
+                      result = subprocess.run(
+                          [
+                              "python",
+                              str(script),
+                          ],
+                          cwd=execution_root,
+                          check=False,
+                          capture_output=True,
+                          text=True,
+                      )
+
+                      if result.returncode != 0:
+                          raise SystemExit(
+                              "Execution failed in "
+                              f"{archive_path}:\n"
+                              f"STDOUT:\n"
+                              f"{result.stdout}\n"
+                              f"STDERR:\n"
+                              f"{result.stderr}"
+                          )
+
+                      if (
+                          require_smoke
+                          and "SMOKE_OK"
+                          not in result.stdout
+                      ):
+                          raise SystemExit(
+                              "Smoke marker missing in "
+                              f"{archive_path}"
+                          )
+
+                      runs += 1
+
+                  after = directory_digest(
+                      package_root
+                  )
+
+                  if after != before:
+                      raise SystemExit(
+                          "Executable validation mutated "
+                          f"{archive_path}"
+                      )
+
+          if runs != 8:
+              raise SystemExit(
+                  "Expected 8 executable runs, "
+                  f"got {runs}"
+              )
+
+          CURRENT.unlink()
+
+          count, digest = tree_digest()
+
+          if (count, digest) != (
+              TARGET_COUNT,
+              TARGET_TREE,
+          ):
+              raise SystemExit(
+                  "Target-tree mismatch: "
+                  f"expected {(TARGET_COUNT, TARGET_TREE)}, "
+                  f"got {(count, digest)}"
+              )
+
+          expected_status = {
+              CURRENT.as_posix(): " D",
+              STALE.as_posix(): " D",
+              "CITATION.cff": " M",
+              "README.md": " M",
+          }
+          actual_status = {}
+
+          status_lines = subprocess.run(
+              [
+                  "git",
+                  "status",
+                  "--porcelain=v1",
+                  "--untracked-files=all",
+              ],
+              check=True,
+              capture_output=True,
+              text=True,
+          ).stdout.splitlines()
+
+          for line in status_lines:
+              if " -> " in line[3:]:
+                  raise SystemExit(
+                      f"Unexpected rename: {line}"
+                  )
+
+              actual_status[line[3:]] = line[:2]
+
+          if actual_status != expected_status:
+              raise SystemExit(
+                  "Changed-file boundary mismatch. "
+                  f"Expected {expected_status}; "
+                  f"got {actual_status}"
+              )
+
+          print(
+              "PASS: 83-file source tree; "
+              "metadata v7.2.0; n=2...16; "
+              f"{checked_links} links; "
+              "69 ZIP CRC checks; "
+              "207 manifests; "
+              "4 engines; 4 smoke tests; "
+              "82-file target tree; "
+              "4-path boundary."
+          )
+          PY
+
+          git diff --check
+          git diff --stat
+
+      - name: Commit and push metadata synchronization
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A -- \
+            "${WORKFLOW_PATH}" \
+            "${STALE_WORKFLOW_PATH}" \
+            README.md \
+            CITATION.cff
+
+          git diff --cached --check
+
+          git commit \
+            -m "Synchronize retention framework v7.2.0 metadata" \
+            -m "Add the Operational Retention & Synthesis Framework v7.2.0 status to README.md, synchronize CITATION.cff to version 7.2.0 and the current repository URL, remove the obsolete plasma-image rename workflow, verify the exact audited source and target trees, preserve all 69 ZIP archives, validate 207 active manifest entries, execute four active engines and four smoke tests without mutation, recheck generalized ramp scaling and repository links, enforce the exact four-path boundary, and remove this one-time workflow."
+
+          git push origin "HEAD:${GITHUB_REF_NAME}"
