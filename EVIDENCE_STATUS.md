@@ -22,10 +22,27 @@ This ranking is internal to the configured screening equations. It is not a meas
 
 ## Critical Scaling Synchronization
 
-    C ~ v^(1/4)
-    t_delay ~ v^(−1/2)
+The corrected cubic specialization is:
 
-The exponent is determined by the simultaneous balance of the derivative, drift, and cubic terms.
+```text
+dC/dt = vtC − gC³
+C_critical ~ g^(−1/2)v^(1/4)
+t_delay ~ v^(−1/2)
+```
+
+The generalized linearly ramped class is:
+
+```text
+dC/dt = vtC − gC^n
+C_critical ~ g^(−1/(n−1))v^(1/(2(n−1)))
+t_delay ~ v^(−1/2)
+```
+
+for g > 0 and n > 1.
+
+The amplitude exponent depends on the saturation order. The temporal exponent −1/2 does not: it is fixed by the derivative–ramp balance while the critical ramp retains the form vtC.
+
+Under geometric dimensional closure, `V_coh,d ∝ C^d` and `n = d`. The full-volume three-dimensional specialization gives `V_coh,3 ∝ C³` and recovers the cubic amplitude exponent 1/4 without changing the delay exponent.
 
 ## Successor Dynamic Evidence Requirements
 

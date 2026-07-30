@@ -550,29 +550,122 @@ Dimensionless canonical coherence variable after critical rescaling.
 
 Represents the universal reduced-order dynamics near endogenous critical transition.
 
-# Cubic Critical Form and Scaling
+# Generalized Critical Ramp-Scaling Lemma
 
-Near the critical regime, the reduced form is:
+For the nonnegative endogenous coherence amplitude C ≥ 0, consider:
 
-  * dC/dt = vtC − C³
+```text
+dC/dt = vtC − gC^n
+v > 0, g > 0, n > 1
+```
 
-Use the rescaling:
+Set:
 
-  * C = v^(1/4)y
-  * t = v^(−1/2)τ
+```text
+t = v^(−α)τ
+C = g^(−1/(n−1))v^βy
+```
 
-The derivative, drift, and cubic terms then carry the same exponent:
+The derivative, linearly ramped critical term, and nonlinear saturation term carry the exponents:
 
-  * dC/dt ~ v^(3/4)
-  * vtC ~ v^(3/4)
-  * C³ ~ v^(3/4)
+```text
+β + α
+1 − α + β
+nβ
+```
+
+Canonical balance requires:
+
+```text
+β + α = 1 − α + β = nβ
+```
 
 Therefore:
 
-  * C ~ v^(1/4)
-  * t_delay ~ v^(−1/2)
+```text
+α = 1/2
+β = 1/(2(n−1))
+```
 
-The exponent follows from the simultaneous balance of the time derivative, the drift term, and the cubic saturation term. It does not follow from the cubic term alone.
+The exact rescaling is:
+
+```text
+t = v^(−1/2)τ
+C = g^(−1/(n−1))v^(1/(2(n−1)))y
+```
+
+and the reduced equation becomes:
+
+```text
+dy/dτ = τy − y^n
+```
+
+Thus:
+
+```text
+t_critical ~ v^(−1/2)
+t_delay ~ v^(−1/2)
+C_critical ~ g^(−1/(n−1))v^(1/(2(n−1)))
+```
+
+| Saturation order n | Amplitude exponent in v | Time exponent in v |
+|---:|---:|---:|
+| 2 | 1/2 | −1/2 |
+| 3 | 1/4 | −1/2 |
+| 4 | 1/6 | −1/2 |
+| 5 | 1/8 | −1/2 |
+
+The temporal exponent −1/2 is fixed by the derivative–ramp balance and is independent of the nonlinear saturation order while the ramp retains the form vtC. The saturation order changes only the critical-amplitude exponent.
+
+For a signed amplitude, use the symmetry-compatible saturation `−g|C|^(n−1)C`; the same exponent balance follows.
+
+## Geometric Dimensional Closure
+
+For d independent characteristic coherence extents:
+
+```text
+V_coh,d ∝ ∏_(i=1)^d C_i
+```
+
+Under isotropy `C_i ~ C`:
+
+```text
+V_coh,d ∝ C^d
+```
+
+If the coherent d-dimensional measure supplies the nonlinear saturation closure:
+
+```text
+n = d
+```
+
+For d > 1:
+
+```text
+C_critical ~ g^(−1/(d−1))v^(1/(2(d−1)))
+t_delay ~ v^(−1/2)
+```
+
+For the full-volume three-dimensional realization:
+
+```text
+V_coh,3 ∝ C_xC_yC_z
+C_x ~ C_y ~ C_z ~ C
+V_coh,3 ∝ C³
+```
+
+The cubic specialization is:
+
+```text
+dC/dt = vtC − gC³
+C_critical ~ g^(−1/2)v^(1/4)
+t_delay ~ v^(−1/2)
+```
+
+Geometric closure and symmetry closure are distinct model arguments. Geometric closure predicts a dimension-sensitive saturation order. The independent symmetry `C → −C` excludes even powers in a sign-symmetric scalar amplitude equation. In the three-dimensional EDS specialization both routes support C³, while the delay exponent remains independent of the saturation order.
+
+A cross-dimensional realization can test the geometric component: changing effective dimension should change the amplitude exponent according to `1/(2(n−1))`, while the temporal exponent remains −1/2 provided the ramp remains `vtC`.
+
 - Ω(t)
 
 Dynamic resonance window representing the admissible operational region of state space.
