@@ -10,11 +10,11 @@ authors:
     given-names: "Maksym"
     orcid: "https://orcid.org/0009-0000-0832-9597"
 
-repository-code: "https://github.com/maximumberlin76-gif/Resonance-Window-Theorem-and-Retention-Theorem-Framework"
+repository-code: "https://github.com/maximumberlin76-gif/Resonance-Window-Retention-Resonance-Window-and-Retention-Theorem-in-Nonlinear-Open-Dissipative-Dy"
 
 license: Apache-2.0
 
-version: "v2.4.0-philosophical-edition"
+version: "7.2.0"
 
 abstract: >
   Framework dedicated to the study of resonance,

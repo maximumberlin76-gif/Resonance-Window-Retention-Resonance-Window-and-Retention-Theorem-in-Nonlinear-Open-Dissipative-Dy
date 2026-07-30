@@ -10,6 +10,10 @@
 
 ## Operational Retention & Synthesis Framework for Nonlinear Dissipative Open Dynamic Systems
 
+## Status
+
+Operational Retention & Synthesis Framework v7.2.0
+
 This repository presents a theoretical and computational framework for resonance-driven self-organization, coherent accumulation, retained operational regimes, and dynamic synthesis in nonlinear dissipative open dynamic systems.
 
 ## Computational Evidence Boundary
